@@ -1,0 +1,801 @@
+id;sexo;edad;region;ciudad;producto;antiguedad_anios;P1_sat_atencion;P2_sat_tiempos;P3_sat_app;P4_sat_sucursal;P5_sat_general;P6_nps;comentario;ponderador
+1;2;42,0;Biobio;santiago;Cuenta Vista;25;4,0;3,0;4,0;2,0;5,0;10,0;;1,19
+2;1;71,0;Coquimbo ;Santiago ;Tarjeta de Credito;15;4,0;4,0;3,0;4,0;4,0;0,0;Todo bien;1,617
+3;1;50,0;Metropolitana;STGO;Tarjeta de Credito;21;4,0;3,0;3,0;1,0;4,0;8,0;Excelente ejecutivo;0,982
+4;2;37,0;Coquimbo;Santiago;Tarjeta de Credito;1;4,0;5,0;4,0;4,0;4,0;5,0;;0,758
+5;9;63,0;Valparaiso;Vina del Mar;Cuenta Vista;12;1,0;1,0;2,0;4,0;4,0;8,0;Muy malos los tiempos de espera;1,177
+6;1;32,0;Biobio;valpo;Tarjeta de Credito;20;5,0;4,0;3,0;5,0;4,0;6,0;Demoraron mucho en atenderme;0,569
+7;1;24,0;Metropolitana;Santiago;Cuenta Vista;14;4,0;2,0;4,0;5,0;5,0;8,0;;1,863
+8;1;65,0;Metropolitana;Coquimbo;Tarjeta de Credito;3;5,0;3,0;4,0;1,0;2,0;7,0;;0,84
+9;1;78,0;Biobio;Talcahuano;Credito de Consumo;5;2,0;99,0;5,0;3,0;5,0;10,0;Mejorar el sitio web;1,464
+10;1;28,0;Biobio;Vina del Mar;Cuenta Corriente;18;2,0;4,0;2,0;5,0;3,0;8,0;;1,079
+11;2;52,0;Valparaiso;La Serena;Tarjeta de Credito;1;4,0;5,0;4,0;5,0;5,0;10,0;;0,785
+12;2;62,0;BIOBIO;santiago;Tarjeta de Credito;13;3,0;3,0;3,0;1,0;4,0;10,0;Sin comentarios;0,999
+13;1;19,0;COQUIMBO;temuco;Cuenta Corriente;18;99,0;4,0;5,0;4,0;5,0;10,0;Todo bien;1,544
+14;2;66,0;Araucania;STGO;Tarjeta de Credito;21;3,0;1,0;4,0;5,0;4,0;9,0;La app se cae seguido;1,718
+15;1;43,0;Metropolitana;Talcahuano;Cuenta Corriente;24;4,0;4,0;2,0;3,0;3,0;4,0;Mejorar el sitio web;1,475
+16;1;51,0;Metropolitana;La Serena;Cuenta Vista;17;4,0;1,0;3,0;4,0;5,0;99,0;La app se cae seguido;0,593
+17;9;41,0;Biobio;Talcahuano;Cuenta Corriente;5;4,0;4,0;4,0;4,0;1,0;5,0;;0,563
+18;2;23,0;Biobio;la serena;Cuenta Corriente;5;4,0;5,0;4,0;2,0;2,0;6,0;Buena atencion;1,717
+19;2;74,0;Metropolitana;Puente Alto;Cuenta Vista;2;2,0;2,0;1,0;2,0;4,0;4,0;;0,961
+20;1;79,0;Biobio;Puente Alto;Cuenta Vista;2;4,0;4,0;4,0;1,0;4,0;8,0;Muy malos los tiempos de espera;0,873
+21;1;33,0;Metropolitana;Santiago;Cuenta Vista;21;4,0;4,0;3,0;3,0;4,0;6,0;;1,374
+22;1;65,0;Araucania;Viña del Mar;Cuenta Corriente;1;5,0;4,0;5,0;4,0;4,0;8,0;Muy malos los tiempos de espera;1,62
+23;1;74,0;Metropolitana;santiago;Credito de Consumo;7;4,0;4,0;4,0;4,0;5,0;10,0;Excelente ejecutivo;1,199
+24;2;37,0;Biobio;Temuco;Cuenta Corriente;0;4,0;5,0;3,0;4,0;4,0;7,0;Excelente ejecutivo;0,72
+25;1;23,0;Metropolitana;STGO;Cuenta Corriente;22;3,0;4,0;5,0;2,0;5,0;99,0;Mejorar el sitio web;2,091
+26;1;32,0;Metropolitana;Santiago;Credito de Consumo;19;3,0;5,0;5,0;2,0;4,0;8,0;Buena atencion;1,26
+27;2;54,0;Valparaiso;Puente Alto;Cuenta Corriente;5;4,0;4,0;1,0;4,0;4,0;7,0;Mejorar el sitio web;1,642
+28;1;25,0;METROPOLITANA;Temuco;Cuenta Corriente;4;1,0;1,0;5,0;2,0;4,0;10,0;Demoraron mucho en atenderme;1,039
+29;1;59,0;Araucania;Vina del Mar;Cuenta Corriente;13;5,0;4,0;5,0;5,0;5,0;8,0;;1,057
+30;1;25,0;Metropolitana;VALPARAISO;Credito de Consumo;20;1,0;4,0;4,0;2,0;4,0;1,0;;1,405
+31;1;22,0;  Valparaiso;Ovalle;Cuenta Corriente;18;5,0;4,0;5,0;5,0;5,0;6,0;;0,698
+32;1;72,0;Metropolitana;La Serena;Cuenta Corriente;24;2,0;5,0;4,0;5,0;2,0;10,0;Buena atencion;1,76
+33;2;77,0;araucania;Ovalle;Tarjeta de Credito;19;5,0;5,0;3,0;5,0;4,0;3,0;Muy malos los tiempos de espera;1,554
+34;1;76,0;Metropolitana;concepción;Cuenta Corriente;20;4,0;3,0;4,0;3,0;3,0;9,0;;1,642
+35;2;76,0;Coquimbo;Ovalle;Credito de Consumo;23;5,0;3,0;4,0;5,0;2,0;6,0;Sin comentarios;1,498
+36;2;31,0;Metropolitana;Puente Alto;Cuenta Vista;20;4,0;2,0;4,0;3,0;3,0;10,0;;2,193
+37;1;73,0;Coquimbo;La Serena;Cuenta Corriente;17;4,0;1,0;3,0;5,0;4,0;6,0;;1,158
+38;2;23,0;Coquimbo;Puente Alto;Tarjeta de Credito;19;5,0;5,0;4,0;2,0;5,0;5,0;;1,706
+39;2;49,0;Metropolitana ;valpo;Cuenta Vista;2;4,0;5,0;3,0;99,0;5,0;7,0;Buena atencion;1,241
+40;1;50,0;Coquimbo;Puente Alto;Cuenta Corriente;5;1,0;2,0;2,0;5,0;5,0;6,0;;1,741
+41;1;74,0;VALPARAISO;temuco;Credito de Consumo;8;3,0;5,0;5,0;5,0;2,0;8,0;;2,066
+42;1;77,0;Metropolitana;concepción;Credito de Consumo;11;99,0;4,0;5,0;2,0;5,0;3,0;La app se cae seguido;1,254
+43;2;54,0;Metropolitana;STGO;Tarjeta de Credito;8;2,0;5,0;3,0;4,0;4,0;6,0;Mejorar el sitio web;0,619
+44;2;21,0;  Valparaiso;Villarrica;Cuenta Vista;20;3,0;4,0;5,0;3,0;5,0;9,0;;1,228
+45;1;38,0;Valparaiso;Santiago ;Cuenta Vista;19;4,0;4,0;4,0;2,0;4,0;7,0;Todo bien;1,988
+46;2;46,0;Metropolitana;concepción;Cuenta Corriente;4;4,0;2,0;3,0;3,0;1,0;3,0;Todo bien;1,528
+47;1;71,0;Valparaiso;Puente Alto;Cuenta Corriente;24;99,0;5,0;4,0;4,0;4,0;10,0;Sin comentarios;1,314
+48;2;26,0;Metropolitana;STGO;Cuenta Corriente;7;4,0;5,0;2,0;4,0;4,0;5,0;Excelente ejecutivo;1,156
+49;1;75,0;Araucania;Puente Alto;Cuenta Vista;4;4,0;2,0;4,0;2,0;5,0;8,0;;2,155
+50;1;63,0;Araucania;Valparaiso;Credito de Consumo;11;2,0;2,0;2,0;3,0;5,0;9,0;Buena atencion;1,193
+51;2;75,0;Metropolitana;Padre Las Casas;Cuenta Vista;0;5,0;5,0;3,0;4,0;3,0;7,0;Mejorar el sitio web;2,033
+52;1;37,0;VALPARAISO;Viña del Mar;Cuenta Corriente;23;4,0;5,0;4,0;3,0;4,0;9,0;Sin comentarios;1,651
+53;1;36,0;Araucania;Villarrica;Tarjeta de Credito;5;5,0;3,0;4,0;5,0;5,0;5,0;La app se cae seguido;1,386
+54;1;31,0;Araucania;Talcahuano;Cuenta Corriente;15;3,0;2,0;5,0;1,0;2,0;8,0;;0,57
+55;1;68,0;Metropolitana;Vina del Mar;Tarjeta de Credito;24;5,0;5,0;4,0;5,0;5,0;5,0;Demoraron mucho en atenderme;1,751
+56;2;34,0;Biobio;concepción;Cuenta Vista;6;5,0;3,0;4,0;4,0;4,0;10,0;Todo bien;2,085
+57;1;25,0;Araucania;Puente Alto;Cuenta Corriente;25;4,0;1,0;1,0;3,0;2,0;9,0;La app se cae seguido;2,062
+58;1;71,0;Metropolitana;Concepcion;Cuenta Corriente;9;4,0;3,0;4,0;3,0;3,0;7,0;;1,195
+59;1;50,0;Valparaiso;concepción;Tarjeta de Credito;1;99,0;2,0;1,0;5,0;5,0;7,0;;0,523
+60;2;44,0;Araucania;Talcahuano;Cuenta Vista;18;5,0;2,0;3,0;5,0;5,0;99,0;;1,447
+61;2;37,0;Coquimbo;Talcahuano;Cuenta Corriente;24;4,0;4,0;4,0;4,0;5,0;9,0;;0,939
+62;1;66,0;Araucania;Coquimbo;Cuenta Corriente;3;5,0;3,0;4,0;4,0;3,0;99,0;Buena atencion;2,111
+63;1;60,0;Metropolitana;STGO;Cuenta Vista;6;5,0;3,0;4,0;5,0;1,0;10,0;;2,145
+64;2;41,0;VALPARAISO;concepción;Cuenta Corriente;3;5,0;2,0;5,0;4,0;1,0;8,0;;0,969
+65;1;35,0;Araucania;STGO;Cuenta Vista;17;2,0;5,0;4,0;1,0;2,0;4,0;;1,654
+66;1;42,0;Valparaiso ;santiago;Credito de Consumo;23;5,0;2,0;3,0;5,0;5,0;8,0;Buena atencion;1,097
+67;2;38,0;Metropolitana;Talcahuano;Cuenta Corriente;20;2,0;5,0;99,0;4,0;4,0;10,0;;1,212
+68;2;75,0;Coquimbo;Santiago ;Cuenta Vista;24;4,0;4,0;3,0;5,0;5,0;2,0;Todo bien;1,67
+69;1;29,0;Metropolitana ;Santiago ;Tarjeta de Credito;20;4,0;5,0;3,0;2,0;99,0;10,0;Todo bien;0,474
+70;1;53,0;Metropolitana;Ovalle;Cuenta Corriente;5;4,0;5,0;5,0;4,0;99,0;6,0;Mejorar el sitio web;1,637
+71;1;61,0;Metropolitana;concepción;Cuenta Vista;4;4,0;3,0;1,0;2,0;4,0;10,0;Buena atencion;2,052
+72;1;18,0;Valparaiso;Santiago;Cuenta Corriente;17;5,0;4,0;3,0;3,0;2,0;10,0;Excelente ejecutivo;1,332
+73;1;62,0;BIOBIO;STGO;Cuenta Corriente;1;4,0;99,0;2,0;5,0;5,0;8,0;Demoraron mucho en atenderme;0,959
+74;1;38,0;Valparaiso;Santiago;Credito de Consumo;17;4,0;5,0;4,0;5,0;2,0;8,0;Muy malos los tiempos de espera;1,206
+75;2;18,0;Coquimbo;Puente Alto;Cuenta Corriente;5;5,0;4,0;4,0;5,0;4,0;6,0;La app se cae seguido;1,953
+76;1;29,0;Metropolitana;Talcahuano;Cuenta Vista;9;3,0;5,0;3,0;4,0;4,0;7,0;Mejorar el sitio web;0,946
+77;2;57,0;  Coquimbo;VALPARAISO;Tarjeta de Credito;4;5,0;3,0;4,0;5,0;3,0;6,0;Sin comentarios;1,637
+78;1;75,0;Biobio;Puente Alto;Tarjeta de Credito;3;3,0;99,0;3,0;5,0;5,0;6,0;Demoraron mucho en atenderme;0,611
+79;2;38,0;Coquimbo;VALPARAISO;Credito de Consumo;1;3,0;3,0;2,0;5,0;5,0;10,0;Sin comentarios;1,323
+80;1;25,0;Metropolitana;Los Angeles;Cuenta Corriente;9;2,0;4,0;3,0;99,0;3,0;10,0;;1,445
+81;2;35,0;Coquimbo;valpo;Cuenta Vista;12;5,0;1,0;5,0;4,0;4,0;10,0;Excelente ejecutivo;0,944
+82;1;20,0;metropolitana;Valparaiso;Tarjeta de Credito;5;1,0;5,0;4,0;3,0;5,0;10,0;Mejorar el sitio web;0,9
+83;1;55,0;Biobio;concepción;Tarjeta de Credito;12;4,0;2,0;4,0;2,0;4,0;9,0;;1,101
+84;2;58,0;coquimbo;Puente Alto;Credito de Consumo;25;4,0;3,0;2,0;4,0;5,0;8,0;;1,018
+85;1;41,0;Coquimbo;Padre Las Casas;Cuenta Corriente;6;3,0;3,0;4,0;3,0;4,0;2,0;La app se cae seguido;1,788
+86;1;54,0;Valparaiso;STGO;Cuenta Corriente;15;5,0;4,0;4,0;3,0;5,0;6,0;;0,767
+87;1;73,0;Metropolitana;STGO;Cuenta Corriente;21;5,0;4,0;1,0;4,0;3,0;8,0;Buena atencion;2,173
+88;2;28,0;Valparaiso;Santiago;Credito de Consumo;13;5,0;2,0;5,0;2,0;4,0;7,0;;2,183
+89;1;36,0;Coquimbo;Santiago;Tarjeta de Credito;16;4,0;5,0;4,0;5,0;5,0;8,0;Demoraron mucho en atenderme;1,883
+90;1;78,0;Metropolitana;temuco;Cuenta Corriente;5;99,0;4,0;4,0;3,0;4,0;7,0;Mejorar el sitio web;1,939
+91;1;63,0;Araucania;VALPARAISO;Cuenta Vista;22;4,0;5,0;2,0;4,0;4,0;8,0;;1,502
+92;1;76,0;Araucania;temuco;Cuenta Vista;3;5,0;2,0;1,0;3,0;5,0;1,0;Buena atencion;0,482
+93;2;39,0;Metropolitana ;La Serena;Cuenta Vista;4;5,0;5,0;4,0;4,0;4,0;8,0;La app se cae seguido;2,177
+94;1;48,0;Metropolitana;STGO;Cuenta Corriente;11;4,0;4,0;5,0;4,0;4,0;4,0;Todo bien;0,903
+95;2;70,0;Metropolitana;Los Angeles;Credito de Consumo;5;4,0;99,0;5,0;4,0;3,0;8,0;Todo bien;1,143
+96;1;41,0;Coquimbo;Vina del Mar;Credito de Consumo;25;4,0;3,0;1,0;4,0;3,0;9,0;;1,453
+97;2;50,0;Metropolitana;Coquimbo;Tarjeta de Credito;21;4,0;5,0;5,0;4,0;5,0;5,0;;0,9
+98;2;28,0;Coquimbo;santiago;Cuenta Corriente;20;4,0;4,0;5,0;5,0;4,0;8,0;;1,046
+99;1;78,0;VALPARAISO;la serena;Tarjeta de Credito;21;2,0;4,0;3,0;5,0;4,0;4,0;;1,598
+100;2;55,0;Metropolitana;Puente Alto;Credito de Consumo;12;1,0;3,0;5,0;1,0;2,0;10,0;Buena atencion;1,734
+101;1;70,0;Metropolitana;Puente Alto;Cuenta Corriente;24;3,0;4,0;5,0;3,0;4,0;9,0;Mejorar el sitio web;1,712
+102;1;38,0;Araucania;Padre Las Casas;Cuenta Vista;11;2,0;5,0;4,0;3,0;4,0;4,0;Todo bien;0,937
+103;1;60,0;metropolitana;concepción;Cuenta Vista;13;2,0;4,0;4,0;2,0;3,0;8,0;Sin comentarios;0,667
+104;1;67,0;Metropolitana;Santiago ;Cuenta Corriente;5;5,0;5,0;1,0;5,0;4,0;8,0;;0,857
+105;2;66,0;Coquimbo ;Santiago ;Cuenta Corriente;20;5,0;1,0;4,0;4,0;99,0;7,0;Demoraron mucho en atenderme;1,963
+106;2;25,0;Valparaiso;Talcahuano;Cuenta Corriente;16;5,0;3,0;4,0;4,0;4,0;10,0;Muy malos los tiempos de espera;0,602
+107;1;72,0;Metropolitana;valpo;Cuenta Vista;16;4,0;4,0;4,0;5,0;4,0;9,0;Excelente ejecutivo;1,059
+108;2;61,0;Metropolitana;Puente Alto;Cuenta Vista;8;4,0;5,0;2,0;3,0;5,0;9,0;Todo bien;1,81
+109;1;48,0;Coquimbo;temuco;Cuenta Corriente;13;4,0;4,0;5,0;3,0;4,0;99,0;;1,673
+110;2;77,0;Metropolitana;Puente Alto;Cuenta Corriente;4;4,0;4,0;5,0;4,0;4,0;99,0;Excelente ejecutivo;1,767
+111;1;19,0;Valparaiso;Puente Alto;Cuenta Vista;21;5,0;2,0;5,0;5,0;5,0;1,0;;2,192
+112;1;76,0;Metropolitana;Coquimbo;Tarjeta de Credito;25;3,0;5,0;5,0;5,0;99,0;10,0;Sin comentarios;0,728
+113;2;24,0;Araucania;valpo;Cuenta Vista;17;4,0;2,0;5,0;1,0;2,0;9,0;;1,491
+114;1;74,0;metropolitana;La Serena;Cuenta Corriente;3;4,0;4,0;4,0;4,0;4,0;5,0;;1,449
+115;2;23,0;  Valparaiso;Puente Alto;Cuenta Vista;24;5,0;4,0;4,0;1,0;1,0;10,0;Demoraron mucho en atenderme;0,926
+116;2;20,0;VALPARAISO;Temuco;Credito de Consumo;12;4,0;5,0;5,0;3,0;5,0;10,0;Sin comentarios;0,82
+117;2;75,0;valparaiso;Puente Alto;Cuenta Vista;2;4,0;4,0;3,0;3,0;5,0;9,0;Buena atencion;1,008
+118;2;19,0;Metropolitana;Valparaiso;Tarjeta de Credito;0;99,0;4,0;4,0;5,0;5,0;99,0;Sin comentarios;2,0
+119;2;33,0;Biobio;Valparaiso;Credito de Consumo;8;99,0;99,0;4,0;3,0;4,0;7,0;Excelente ejecutivo;1,11
+120;1;73,0;Valparaiso;Talcahuano;Cuenta Corriente;7;3,0;3,0;4,0;4,0;4,0;10,0;;0,9
+121;2;51,0;BIOBIO;STGO;Cuenta Vista;1;5,0;3,0;4,0;4,0;4,0;9,0;;1,881
+122;2;21,0;Valparaiso;Valparaiso;Cuenta Corriente;10;3,0;3,0;2,0;1,0;5,0;4,0;Muy malos los tiempos de espera;0,853
+123;2;75,0;Metropolitana;Concepcion;Cuenta Corriente;3;5,0;3,0;5,0;2,0;5,0;5,0;Demoraron mucho en atenderme;1,085
+124;1;76,0;Coquimbo;Santiago ;Cuenta Corriente;5;4,0;1,0;3,0;4,0;3,0;5,0;;1,125
+125;1;18,0;BIOBIO;Coquimbo;Cuenta Corriente;4;5,0;3,0;4,0;5,0;5,0;5,0;Sin comentarios;1,55
+126;2;39,0;Valparaiso ;Coquimbo;Cuenta Corriente;13;4,0;3,0;4,0;3,0;5,0;9,0;Demoraron mucho en atenderme;0,633
+127;2;66,0;Metropolitana;Ovalle;Credito de Consumo;13;5,0;3,0;1,0;5,0;5,0;99,0;;0,754
+128;1;35,0;Metropolitana;VALPARAISO;Credito de Consumo;24;3,0;5,0;5,0;2,0;4,0;7,0;;1,996
+129;1;49,0;Valparaiso;VALPARAISO;Cuenta Corriente;7;4,0;4,0;4,0;99,0;3,0;10,0;;0,605
+130;1;32,0;Metropolitana;Santiago;Cuenta Corriente;16;5,0;4,0;4,0;3,0;5,0;5,0;Muy malos los tiempos de espera;1,194
+131;1;57,0;Valparaiso;Santiago ;Cuenta Corriente;9;4,0;4,0;99,0;4,0;5,0;99,0;Muy malos los tiempos de espera;0,919
+132;2;43,0;Araucania;Santiago;Cuenta Vista;0;5,0;4,0;5,0;5,0;5,0;8,0;;1,505
+133;1;23,0;Biobio;Santiago;Cuenta Corriente;14;2,0;4,0;4,0;4,0;4,0;7,0;Muy malos los tiempos de espera;1,339
+134;1;71,0;Coquimbo ;VALPARAISO;Cuenta Vista;5;1,0;5,0;2,0;2,0;4,0;6,0;;1,19
+135;1;36,0;Metropolitana ;Coquimbo;Cuenta Corriente;6;5,0;5,0;3,0;1,0;4,0;8,0;Mejorar el sitio web;1,271
+136;1;33,0;valparaiso;Temuco;Cuenta Vista;24;2,0;3,0;5,0;4,0;5,0;9,0;;1,857
+137;2;80,0;Metropolitana ;Santiago;Cuenta Corriente;7;5,0;3,0;4,0;4,0;5,0;8,0;Excelente ejecutivo;0,931
+138;2;55,0;  Metropolitana;temuco;Tarjeta de Credito;11;4,0;5,0;4,0;4,0;5,0;8,0;;0,454
+139;1;46,0;Metropolitana;Santiago;Cuenta Corriente;15;4,0;2,0;5,0;4,0;4,0;4,0;;1,565
+140;1;39,0;Metropolitana;Viña del Mar;Cuenta Vista;16;3,0;4,0;5,0;2,0;4,0;10,0;Sin comentarios;0,503
+141;1;68,0;Metropolitana;Coquimbo;Credito de Consumo;2;5,0;4,0;5,0;3,0;3,0;4,0;;1,469
+142;1;76,0;Valparaiso;Padre Las Casas;Tarjeta de Credito;8;5,0;4,0;2,0;4,0;1,0;9,0;Todo bien;0,778
+143;1;19,0;Biobio;Viña del Mar;Cuenta Corriente;8;3,0;2,0;4,0;5,0;4,0;99,0;Mejorar el sitio web;1,444
+144;1;70,0;Metropolitana;Los Angeles;Cuenta Corriente;12;99,0;2,0;4,0;5,0;5,0;5,0;Buena atencion;1,174
+145;2;74,0;Metropolitana;Vina del Mar;Cuenta Vista;2;3,0;4,0;1,0;4,0;5,0;8,0;;1,591
+146;2;52,0;Metropolitana ;santiago;Cuenta Vista;20;3,0;2,0;4,0;2,0;5,0;8,0;Buena atencion;1,869
+147;1;22,0;Araucania;STGO;Credito de Consumo;13;3,0;1,0;5,0;5,0;5,0;7,0;;0,969
+148;2;36,0;coquimbo;VALPARAISO;Cuenta Corriente;1;5,0;2,0;3,0;4,0;2,0;1,0;Muy malos los tiempos de espera;1,286
+149;1;24,0;Metropolitana;Los Angeles;Cuenta Vista;18;1,0;3,0;3,0;4,0;5,0;2,0;;1,426
+150;2;51,0;BIOBIO;Talcahuano;Credito de Consumo;11;3,0;4,0;4,0;2,0;4,0;3,0;;0,823
+151;1;20,0;Valparaiso;concepción;Tarjeta de Credito;24;1,0;2,0;2,0;3,0;3,0;10,0;Buena atencion;0,562
+152;1;59,0;Coquimbo;Ovalle;Cuenta Corriente;3;5,0;4,0;3,0;5,0;2,0;6,0;;1,224
+153;1;75,0;Metropolitana ;VALPARAISO;Cuenta Corriente;17;4,0;3,0;3,0;2,0;4,0;8,0;;1,305
+154;2;21,0;Araucania;Puente Alto;Cuenta Vista;4;3,0;3,0;4,0;5,0;4,0;8,0;;2,136
+155;2;26,0;Valparaiso;Viña del Mar;Cuenta Vista;0;2,0;3,0;4,0;2,0;5,0;7,0;Todo bien;0,634
+156;2;79,0;Biobio;La Serena;Cuenta Corriente;0;4,0;3,0;1,0;4,0;5,0;10,0;Excelente ejecutivo;1,07
+157;2;74,0;Metropolitana;Santiago ;Tarjeta de Credito;4;5,0;4,0;4,0;99,0;1,0;7,0;;1,653
+158;2;24,0;Biobio;Santiago;Tarjeta de Credito;16;3,0;5,0;3,0;3,0;5,0;7,0;;0,94
+159;9;999,0;VALPARAISO;STGO;Cuenta Vista;11;3,0;4,0;4,0;4,0;4,0;5,0;Sin comentarios;1,431
+160;2;23,0;COQUIMBO;Valparaiso;Tarjeta de Credito;3;4,0;5,0;2,0;1,0;5,0;9,0;La app se cae seguido;1,42
+161;2;57,0;VALPARAISO;Santiago ;Tarjeta de Credito;23;3,0;3,0;5,0;4,0;2,0;2,0;;0,486
+162;2;71,0;Metropolitana;Talcahuano;Credito de Consumo;1;99,0;4,0;5,0;4,0;4,0;6,0;Todo bien;1,618
+163;1;67,0;Araucania;Talcahuano;Tarjeta de Credito;10;4,0;3,0;5,0;1,0;4,0;5,0;;0,875
+164;1;27,0;metropolitana;Santiago;Tarjeta de Credito;5;3,0;4,0;4,0;5,0;5,0;7,0;Sin comentarios;0,901
+165;2;56,0;biobio;Coquimbo;Cuenta Vista;24;1,0;4,0;5,0;3,0;5,0;6,0;La app se cae seguido;1,84
+166;1;62,0;Metropolitana;Coquimbo;Cuenta Corriente;3;5,0;4,0;3,0;2,0;1,0;9,0;;0,745
+167;1;60,0;Valparaiso;santiago;Tarjeta de Credito;20;5,0;4,0;3,0;4,0;1,0;99,0;;1,304
+168;1;64,0;Araucania;Santiago ;Tarjeta de Credito;20;1,0;3,0;2,0;3,0;4,0;8,0;Todo bien;1,18
+169;2;62,0;METROPOLITANA;Temuco;Tarjeta de Credito;6;3,0;5,0;4,0;5,0;5,0;4,0;;0,586
+170;2;60,0;Valparaiso;STGO;Cuenta Corriente;10;2,0;1,0;5,0;2,0;4,0;6,0;Demoraron mucho en atenderme;1,699
+171;2;19,0;Araucania;Santiago ;Cuenta Vista;4;5,0;5,0;5,0;1,0;4,0;9,0;Muy malos los tiempos de espera;1,269
+172;2;59,0;Biobio;Los Angeles;Tarjeta de Credito;10;99,0;5,0;5,0;5,0;5,0;6,0;;1,819
+173;2;74,0;Biobio ;Temuco;Credito de Consumo;3;5,0;3,0;5,0;5,0;3,0;8,0;;1,568
+174;1;54,0;Biobio;Padre Las Casas;Cuenta Corriente;17;4,0;4,0;5,0;4,0;5,0;6,0;Mejorar el sitio web;0,718
+175;2;45,0;Araucania ;Santiago ;Cuenta Vista;15;5,0;4,0;4,0;3,0;5,0;10,0;Mejorar el sitio web;1,471
+176;2;40,0;Coquimbo;Viña del Mar;Cuenta Corriente;11;4,0;5,0;3,0;3,0;4,0;8,0;;1,853
+177;2;34,0;Metropolitana;Puente Alto;Cuenta Vista;4;5,0;2,0;4,0;5,0;5,0;4,0;Excelente ejecutivo;2,067
+178;2;43,0;Metropolitana;Valparaiso;Cuenta Corriente;16;4,0;4,0;4,0;3,0;2,0;0,0;;1,849
+179;1;72,0;Metropolitana;Santiago;Cuenta Corriente;22;1,0;5,0;4,0;3,0;4,0;9,0;Sin comentarios;2,109
+180;1;66,0;METROPOLITANA;Puente Alto;Tarjeta de Credito;25;1,0;1,0;99,0;5,0;4,0;6,0;Todo bien;0,739
+181;2;63,0;Coquimbo;Valparaiso;Cuenta Vista;3;2,0;4,0;4,0;3,0;2,0;99,0;Todo bien;2,194
+182;1;41,0;BIOBIO;santiago;Cuenta Corriente;8;3,0;5,0;2,0;4,0;4,0;8,0;;1,884
+183;2;75,0;Biobio;Santiago ;Tarjeta de Credito;8;4,0;5,0;4,0;3,0;4,0;7,0;;1,24
+184;1;24,0;Metropolitana;Vina del Mar;Cuenta Corriente;0;4,0;99,0;3,0;4,0;2,0;5,0;;1,635
+185;1;40,0;Coquimbo;VALPARAISO;Cuenta Corriente;25;5,0;3,0;5,0;4,0;4,0;10,0;;0,44
+186;2;71,0;Coquimbo;Santiago;Cuenta Vista;16;2,0;4,0;4,0;4,0;4,0;5,0;;1,179
+187;2;72,0;Valparaiso ;Villarrica;Cuenta Corriente;23;5,0;2,0;1,0;2,0;3,0;10,0;;2,068
+188;1;77,0;metropolitana;concepción;Cuenta Vista;17;2,0;99,0;5,0;3,0;5,0;10,0;;1,927
+189;1;77,0;Valparaiso;Santiago ;Cuenta Corriente;6;3,0;3,0;3,0;4,0;4,0;10,0;Todo bien;1,528
+190;1;44,0;Coquimbo;Santiago;Credito de Consumo;21;4,0;3,0;3,0;1,0;5,0;5,0;Todo bien;1,385
+191;2;35,0;Biobio;Concepcion;Credito de Consumo;7;5,0;2,0;5,0;3,0;2,0;9,0;;1,649
+192;1;999,0;Metropolitana;Talcahuano;Cuenta Vista;6;3,0;5,0;4,0;3,0;1,0;9,0;Buena atencion;1,399
+193;2;46,0;Metropolitana;Temuco;Credito de Consumo;22;4,0;4,0;4,0;3,0;3,0;8,0;;0,682
+194;9;70,0;Coquimbo;Puente Alto;Cuenta Corriente;5;4,0;4,0;5,0;4,0;3,0;4,0;Buena atencion;1,857
+195;2;21,0;Metropolitana;Puente Alto;Cuenta Corriente;4;4,0;4,0;99,0;5,0;5,0;7,0;Buena atencion;0,594
+196;9;22,0;  Metropolitana;Concepcion;Credito de Consumo;1;4,0;5,0;2,0;5,0;2,0;9,0;Sin comentarios;0,786
+197;2;73,0;  Biobio;Santiago ;Credito de Consumo;16;5,0;4,0;4,0;5,0;4,0;1,0;Buena atencion;2,102
+198;2;56,0;Valparaiso;temuco;Credito de Consumo;6;4,0;2,0;3,0;2,0;4,0;9,0;Mejorar el sitio web;0,781
+199;1;50,0;Metropolitana;Santiago;Cuenta Vista;1;3,0;3,0;5,0;2,0;4,0;4,0;Mejorar el sitio web;0,809
+200;1;56,0;Metropolitana;Santiago ;Cuenta Vista;5;5,0;2,0;4,0;3,0;4,0;9,0;;1,868
+201;2;34,0;Metropolitana;concepción;Cuenta Corriente;8;5,0;4,0;5,0;3,0;3,0;10,0;Mejorar el sitio web;1,293
+202;2;49,0;araucania;Santiago ;Cuenta Corriente;12;5,0;2,0;4,0;3,0;3,0;2,0;;1,705
+203;2;60,0;Valparaiso;Santiago;Cuenta Vista;5;1,0;5,0;3,0;3,0;1,0;9,0;Demoraron mucho en atenderme;0,901
+204;2;63,0;Coquimbo;STGO;Credito de Consumo;20;5,0;3,0;99,0;3,0;3,0;1,0;;2,111
+205;2;74,0;Valparaiso;santiago;Cuenta Vista;1;5,0;3,0;1,0;4,0;5,0;6,0;;0,829
+206;1;31,0;Metropolitana;Talcahuano;Tarjeta de Credito;8;4,0;5,0;5,0;5,0;5,0;9,0;;1,128
+207;2;40,0;metropolitana;Villarrica;Cuenta Vista;15;3,0;3,0;2,0;99,0;5,0;4,0;;2,149
+208;1;80,0;Biobio;Villarrica;Cuenta Corriente;2;3,0;5,0;5,0;5,0;5,0;7,0;La app se cae seguido;1,444
+209;1;999,0;Biobio;la serena;Cuenta Vista;12;5,0;4,0;2,0;3,0;4,0;8,0;La app se cae seguido;0,791
+210;2;35,0;Metropolitana;Villarrica;Cuenta Corriente;2;5,0;4,0;5,0;5,0;5,0;4,0;;2,171
+211;2;64,0;Valparaiso;STGO;Credito de Consumo;17;3,0;4,0;5,0;4,0;3,0;3,0;;1,13
+212;2;25,0;Coquimbo;Santiago ;Tarjeta de Credito;4;4,0;4,0;5,0;2,0;4,0;10,0;Demoraron mucho en atenderme;1,879
+213;1;62,0;Valparaiso;La Serena;Cuenta Corriente;10;3,0;5,0;5,0;5,0;4,0;7,0;Excelente ejecutivo;1,752
+214;1;58,0;Coquimbo;santiago;Credito de Consumo;9;1,0;5,0;4,0;1,0;3,0;3,0;Muy malos los tiempos de espera;0,612
+215;2;67,0;Biobio;Viña del Mar;Cuenta Corriente;12;4,0;4,0;5,0;2,0;1,0;9,0;;0,788
+216;2;57,0;METROPOLITANA;valpo;Cuenta Vista;23;1,0;4,0;3,0;4,0;1,0;9,0;;1,088
+217;1;57,0;Metropolitana;valpo;Cuenta Corriente;4;5,0;5,0;1,0;4,0;3,0;2,0;Demoraron mucho en atenderme;0,765
+218;2;58,0;  Araucania;Santiago ;Cuenta Corriente;19;4,0;5,0;1,0;3,0;2,0;9,0;Sin comentarios;0,802
+219;2;69,0;Metropolitana;La Serena;Cuenta Vista;10;2,0;5,0;99,0;99,0;4,0;1,0;Todo bien;2,148
+220;2;74,0;Biobio;Villarrica;Credito de Consumo;13;5,0;2,0;4,0;5,0;2,0;3,0;Todo bien;1,31
+221;2;38,0;Metropolitana ;Santiago ;Cuenta Corriente;23;5,0;4,0;3,0;3,0;5,0;8,0;Muy malos los tiempos de espera;0,976
+222;2;30,0;Metropolitana;Vina del Mar;Cuenta Corriente;23;4,0;2,0;4,0;5,0;5,0;99,0;Excelente ejecutivo;0,528
+223;2;77,0;biobio;Vina del Mar;Cuenta Vista;23;4,0;5,0;4,0;99,0;1,0;6,0;Demoraron mucho en atenderme;1,911
+224;1;55,0;Coquimbo;Santiago ;Tarjeta de Credito;12;1,0;3,0;2,0;4,0;3,0;8,0;;1,199
+225;2;73,0;Coquimbo;Santiago ;Credito de Consumo;24;2,0;5,0;5,0;3,0;4,0;8,0;La app se cae seguido;1,253
+226;1;67,0;metropolitana;Talcahuano;Cuenta Corriente;7;3,0;5,0;2,0;4,0;3,0;8,0;Sin comentarios;0,936
+227;2;26,0;Araucania;santiago;Cuenta Corriente;6;2,0;3,0;5,0;99,0;3,0;10,0;;1,536
+228;2;39,0;Biobio;STGO;Cuenta Corriente;23;5,0;3,0;4,0;5,0;4,0;6,0;Demoraron mucho en atenderme;0,875
+229;2;66,0;Valparaiso;Santiago ;Cuenta Vista;20;5,0;3,0;5,0;3,0;99,0;10,0;Mejorar el sitio web;1,2
+230;2;80,0;Araucania;Vina del Mar;Tarjeta de Credito;23;2,0;1,0;4,0;5,0;2,0;10,0;;0,642
+231;1;79,0;biobio;valpo;Cuenta Corriente;8;5,0;4,0;5,0;4,0;5,0;7,0;;1,002
+232;1;77,0;  Valparaiso;VALPARAISO;Cuenta Vista;14;5,0;3,0;4,0;4,0;3,0;7,0;;1,65
+233;1;50,0;Metropolitana;STGO;Cuenta Corriente;14;5,0;2,0;5,0;5,0;4,0;8,0;Todo bien;0,979
+234;2;18,0;araucania;Talcahuano;Cuenta Corriente;3;99,0;3,0;5,0;4,0;4,0;6,0;;2,043
+235;2;23,0;Valparaiso;Los Angeles;Tarjeta de Credito;23;4,0;4,0;4,0;5,0;5,0;8,0;;0,958
+236;1;78,0;Coquimbo;Talcahuano;Cuenta Corriente;11;4,0;2,0;3,0;4,0;3,0;10,0;La app se cae seguido;1,624
+237;1;47,0;Biobio;Santiago ;Credito de Consumo;15;4,0;5,0;5,0;4,0;5,0;9,0;Muy malos los tiempos de espera;0,699
+238;2;52,0;Metropolitana;Santiago;Tarjeta de Credito;21;4,0;4,0;2,0;4,0;5,0;10,0;;2,067
+239;1;76,0;Biobio;Santiago;Tarjeta de Credito;23;4,0;2,0;3,0;4,0;5,0;8,0;Buena atencion;0,796
+240;2;20,0;Coquimbo;Villarrica;Credito de Consumo;25;5,0;2,0;4,0;3,0;3,0;8,0;Excelente ejecutivo;0,941
+241;2;26,0;coquimbo;VALPARAISO;Tarjeta de Credito;20;4,0;5,0;5,0;3,0;99,0;5,0;;1,821
+242;2;77,0;Metropolitana;Santiago ;Credito de Consumo;6;5,0;5,0;2,0;4,0;3,0;9,0;;1,497
+243;2;69,0;biobio;concepción;Cuenta Vista;9;4,0;3,0;3,0;4,0;3,0;2,0;;1,698
+244;1;40,0;Biobio;STGO;Credito de Consumo;2;3,0;4,0;5,0;5,0;4,0;99,0;Muy malos los tiempos de espera;0,926
+245;1;71,0;Coquimbo;Santiago ;Cuenta Vista;10;4,0;4,0;3,0;5,0;3,0;7,0;Muy malos los tiempos de espera;1,37
+246;1;59,0;Metropolitana;Santiago;Cuenta Corriente;22;5,0;5,0;4,0;4,0;5,0;7,0;;1,416
+247;1;30,0;Metropolitana ;Puente Alto;Cuenta Corriente;22;4,0;5,0;4,0;4,0;5,0;6,0;;1,425
+248;2;25,0;Metropolitana;Vina del Mar;Tarjeta de Credito;12;5,0;5,0;3,0;2,0;5,0;7,0;;0,695
+249;1;26,0;Metropolitana;Padre Las Casas;Tarjeta de Credito;14;3,0;3,0;4,0;4,0;4,0;5,0;;1,155
+250;1;80,0;Araucania;Santiago;Cuenta Corriente;10;3,0;5,0;5,0;5,0;1,0;8,0;;0,592
+251;2;66,0;Coquimbo;concepción;Cuenta Corriente;24;2,0;4,0;3,0;5,0;5,0;9,0;Todo bien;1,864
+252;1;53,0;Metropolitana ;Santiago;Tarjeta de Credito;7;5,0;3,0;1,0;5,0;5,0;10,0;;1,634
+253;1;29,0;Biobio;santiago;Cuenta Corriente;9;4,0;4,0;1,0;3,0;3,0;4,0;Sin comentarios;1,243
+254;1;73,0;coquimbo;la serena;Cuenta Corriente;9;5,0;4,0;4,0;99,0;3,0;9,0;;2,01
+255;2;72,0;Araucania;Ovalle;Cuenta Corriente;2;4,0;4,0;4,0;99,0;5,0;6,0;Mejorar el sitio web;1,426
+256;1;18,0;Metropolitana;Santiago ;Cuenta Corriente;13;4,0;5,0;5,0;4,0;4,0;7,0;;1,453
+257;1;47,0;valparaiso;Padre Las Casas;Cuenta Corriente;7;3,0;1,0;4,0;99,0;5,0;9,0;Todo bien;1,038
+258;2;73,0;Biobio;Los Angeles;Tarjeta de Credito;20;4,0;4,0;5,0;5,0;5,0;1,0;;1,364
+259;2;79,0;metropolitana;Santiago;Cuenta Vista;15;4,0;3,0;5,0;4,0;3,0;5,0;;0,734
+260;2;51,0;Coquimbo;STGO;Cuenta Vista;3;5,0;3,0;5,0;1,0;4,0;9,0;Mejorar el sitio web;1,39
+261;1;35,0;Valparaiso;concepción;Cuenta Corriente;8;3,0;3,0;4,0;4,0;1,0;5,0;Excelente ejecutivo;1,605
+262;2;48,0;VALPARAISO;la serena;Cuenta Vista;0;4,0;3,0;1,0;5,0;2,0;5,0;;2,161
+263;9;31,0;Metropolitana;Concepcion;Credito de Consumo;10;3,0;4,0;4,0;5,0;4,0;3,0;;0,791
+264;2;40,0;Valparaiso ;temuco;Cuenta Corriente;18;4,0;5,0;4,0;2,0;2,0;5,0;Excelente ejecutivo;1,766
+265;2;22,0;Metropolitana;temuco;Credito de Consumo;0;5,0;4,0;2,0;5,0;4,0;10,0;;1,291
+266;2;78,0;Biobio;concepción;Cuenta Vista;13;4,0;99,0;3,0;4,0;5,0;10,0;Mejorar el sitio web;1,854
+267;2;39,0;Biobio;Santiago;Cuenta Vista;9;4,0;2,0;4,0;4,0;5,0;0,0;;0,404
+268;1;47,0;metropolitana;santiago;Tarjeta de Credito;11;4,0;4,0;2,0;3,0;4,0;99,0;La app se cae seguido;0,664
+269;2;46,0;BIOBIO;Coquimbo;Cuenta Corriente;6;4,0;3,0;3,0;1,0;4,0;8,0;Muy malos los tiempos de espera;1,959
+270;2;79,0;Valparaiso;Santiago;Cuenta Corriente;22;5,0;4,0;5,0;5,0;4,0;9,0;Demoraron mucho en atenderme;1,669
+271;2;53,0;VALPARAISO;Santiago;Credito de Consumo;18;5,0;5,0;5,0;4,0;5,0;9,0;Sin comentarios;1,183
+272;1;49,0;Biobio;Santiago;Cuenta Vista;19;5,0;4,0;2,0;2,0;4,0;10,0;Demoraron mucho en atenderme;0,425
+273;1;20,0;METROPOLITANA;Temuco;Cuenta Corriente;23;3,0;2,0;3,0;3,0;4,0;10,0;;2,031
+274;1;58,0;Metropolitana;valpo;Credito de Consumo;21;5,0;3,0;5,0;2,0;4,0;7,0;;0,425
+275;2;73,0;Valparaiso;STGO;Cuenta Vista;24;4,0;4,0;4,0;3,0;3,0;9,0;Muy malos los tiempos de espera;1,553
+276;2;67,0;Metropolitana;Vina del Mar;Tarjeta de Credito;25;4,0;5,0;5,0;3,0;4,0;7,0;;1,203
+277;2;23,0;VALPARAISO;Puente Alto;Tarjeta de Credito;24;2,0;3,0;4,0;3,0;4,0;9,0;La app se cae seguido;1,501
+278;1;69,0;  Metropolitana;Santiago;Cuenta Corriente;24;4,0;4,0;1,0;5,0;4,0;8,0;La app se cae seguido;1,117
+279;2;61,0;Biobio;VALPARAISO;Credito de Consumo;12;5,0;4,0;4,0;5,0;5,0;3,0;;1,125
+280;1;60,0;Coquimbo;valpo;Tarjeta de Credito;9;5,0;5,0;3,0;5,0;4,0;7,0;;2,191
+281;2;45,0;Valparaiso;Santiago;Cuenta Vista;21;3,0;5,0;5,0;3,0;5,0;8,0;Sin comentarios;1,432
+282;2;999,0;Araucania;santiago;Cuenta Vista;23;4,0;5,0;5,0;5,0;3,0;99,0;;2,107
+283;1;38,0;METROPOLITANA;valpo;Cuenta Vista;16;1,0;1,0;3,0;3,0;4,0;8,0;Excelente ejecutivo;1,107
+284;1;63,0;Valparaiso;Santiago;Cuenta Corriente;6;4,0;5,0;3,0;3,0;5,0;9,0;La app se cae seguido;0,867
+285;2;22,0;  Valparaiso;Temuco;Cuenta Vista;23;5,0;4,0;4,0;2,0;5,0;10,0;Sin comentarios;1,573
+286;1;33,0;Metropolitana;Santiago ;Cuenta Corriente;17;4,0;1,0;4,0;5,0;4,0;6,0;;0,709
+287;1;22,0;metropolitana;STGO;Cuenta Corriente;15;5,0;99,0;5,0;4,0;3,0;3,0;Demoraron mucho en atenderme;1,069
+288;1;42,0;Metropolitana;la serena;Tarjeta de Credito;18;2,0;2,0;4,0;3,0;3,0;9,0;Excelente ejecutivo;1,954
+289;1;62,0;  Metropolitana;Santiago ;Cuenta Corriente;3;5,0;4,0;2,0;4,0;4,0;10,0;Todo bien;0,783
+290;2;36,0;Araucania;valpo;Cuenta Vista;22;5,0;4,0;3,0;3,0;5,0;8,0;Mejorar el sitio web;0,449
+291;2;72,0;METROPOLITANA;temuco;Credito de Consumo;16;4,0;2,0;5,0;5,0;5,0;3,0;Excelente ejecutivo;1,444
+292;1;74,0;Coquimbo;Santiago;Cuenta Corriente;6;3,0;5,0;5,0;99,0;2,0;5,0;;0,922
+293;2;65,0;Metropolitana ;Puente Alto;Cuenta Corriente;25;3,0;4,0;4,0;3,0;4,0;9,0;;1,613
+294;1;72,0;Metropolitana;Puente Alto;Tarjeta de Credito;1;99,0;2,0;3,0;5,0;3,0;8,0;Mejorar el sitio web;1,908
+295;2;57,0;VALPARAISO;Concepcion;Credito de Consumo;18;4,0;5,0;5,0;2,0;4,0;4,0;Buena atencion;0,993
+296;2;41,0;Biobio;Santiago ;Cuenta Vista;22;4,0;4,0;1,0;2,0;3,0;5,0;La app se cae seguido;1,406
+297;1;64,0;biobio;Santiago ;Cuenta Corriente;18;4,0;1,0;5,0;5,0;5,0;9,0;;1,41
+298;2;75,0;Metropolitana;Talcahuano;Cuenta Vista;11;2,0;3,0;1,0;2,0;99,0;8,0;La app se cae seguido;2,043
+299;1;33,0;Metropolitana;valpo;Credito de Consumo;24;4,0;4,0;3,0;3,0;4,0;6,0;;2,128
+300;2;52,0;  Coquimbo;santiago;Tarjeta de Credito;7;3,0;2,0;5,0;2,0;3,0;8,0;Demoraron mucho en atenderme;1,786
+301;2;62,0;metropolitana;Puente Alto;Cuenta Corriente;4;4,0;3,0;5,0;4,0;1,0;10,0;Mejorar el sitio web;1,15
+302;2;51,0;Metropolitana;santiago;Credito de Consumo;10;4,0;4,0;3,0;2,0;3,0;8,0;Mejorar el sitio web;1,459
+303;2;57,0;Coquimbo ;Santiago;Cuenta Vista;16;5,0;2,0;5,0;5,0;5,0;1,0;;0,405
+304;1;22,0;Valparaiso;Viña del Mar;Cuenta Corriente;16;2,0;99,0;5,0;5,0;4,0;99,0;Demoraron mucho en atenderme;0,93
+305;2;72,0;Metropolitana;VALPARAISO;Credito de Consumo;17;5,0;3,0;5,0;5,0;1,0;8,0;Mejorar el sitio web;1,681
+306;9;45,0;Metropolitana;STGO;Cuenta Corriente;3;5,0;4,0;2,0;5,0;4,0;1,0;La app se cae seguido;1,876
+307;1;60,0;Valparaiso;La Serena;Cuenta Vista;12;2,0;5,0;5,0;4,0;4,0;4,0;Muy malos los tiempos de espera;0,807
+308;1;66,0;Coquimbo;Santiago ;Tarjeta de Credito;18;4,0;4,0;4,0;3,0;1,0;6,0;Sin comentarios;0,466
+309;1;48,0;valparaiso;Coquimbo;Cuenta Vista;18;5,0;2,0;1,0;4,0;5,0;9,0;La app se cae seguido;1,828
+310;2;72,0;Metropolitana;santiago;Tarjeta de Credito;8;3,0;5,0;3,0;4,0;3,0;8,0;La app se cae seguido;1,881
+311;1;33,0;Araucania;Villarrica;Tarjeta de Credito;13;5,0;4,0;99,0;5,0;5,0;3,0;Sin comentarios;0,753
+312;2;26,0;Valparaiso;Santiago;Cuenta Vista;17;3,0;5,0;4,0;4,0;3,0;6,0;Buena atencion;0,879
+313;1;42,0;metropolitana;Santiago;Cuenta Vista;11;5,0;2,0;5,0;2,0;4,0;8,0;;2,106
+314;2;65,0;Valparaiso;Puente Alto;Tarjeta de Credito;24;3,0;2,0;5,0;5,0;2,0;10,0;Todo bien;1,9
+315;1;48,0;Biobio;STGO;Credito de Consumo;1;4,0;5,0;5,0;5,0;4,0;8,0;;0,69
+316;1;73,0;COQUIMBO;La Serena;Tarjeta de Credito;7;3,0;5,0;5,0;1,0;4,0;9,0;;0,913
+317;2;76,0;Biobio;Vina del Mar;Cuenta Vista;23;3,0;2,0;4,0;5,0;4,0;10,0;Buena atencion;0,737
+318;2;69,0;Metropolitana;concepción;Tarjeta de Credito;25;99,0;1,0;3,0;1,0;4,0;9,0;;1,813
+319;1;48,0;Metropolitana;la serena;Cuenta Vista;8;5,0;4,0;5,0;4,0;5,0;3,0;Mejorar el sitio web;1,882
+320;1;20,0;Metropolitana;Santiago ;Cuenta Corriente;11;3,0;3,0;5,0;5,0;4,0;8,0;;2,01
+321;2;23,0;biobio;Valparaiso;Cuenta Corriente;5;2,0;5,0;5,0;4,0;4,0;8,0;Buena atencion;1,645
+322;1;56,0;metropolitana;Santiago ;Cuenta Vista;23;1,0;2,0;3,0;5,0;2,0;2,0;La app se cae seguido;1,029
+323;1;68,0;Valparaiso;Santiago;Cuenta Vista;23;5,0;5,0;99,0;5,0;4,0;10,0;;0,997
+324;1;34,0;Metropolitana;valpo;Cuenta Corriente;8;5,0;1,0;3,0;3,0;99,0;8,0;Excelente ejecutivo;1,42
+325;2;69,0;Metropolitana;Puente Alto;Tarjeta de Credito;0;4,0;3,0;5,0;99,0;5,0;8,0;Demoraron mucho en atenderme;1,684
+326;1;58,0;BIOBIO;STGO;Cuenta Vista;19;5,0;5,0;4,0;5,0;4,0;2,0;Excelente ejecutivo;0,743
+327;1;70,0;Biobio;Talcahuano;Tarjeta de Credito;21;2,0;4,0;4,0;99,0;2,0;10,0;;1,511
+328;2;61,0;Metropolitana;Padre Las Casas;Cuenta Corriente;22;5,0;2,0;3,0;3,0;4,0;9,0;;1,077
+329;2;47,0;Valparaiso;Talcahuano;Cuenta Vista;21;4,0;4,0;3,0;3,0;5,0;8,0;Muy malos los tiempos de espera;1,911
+330;1;33,0;Coquimbo;Puente Alto;Cuenta Vista;23;4,0;99,0;99,0;5,0;4,0;8,0;Demoraron mucho en atenderme;0,58
+331;1;53,0;Metropolitana;Puente Alto;Credito de Consumo;22;4,0;5,0;4,0;5,0;4,0;9,0;;1,064
+332;1;999,0;METROPOLITANA;Ovalle;Cuenta Corriente;19;3,0;4,0;5,0;2,0;1,0;9,0;Demoraron mucho en atenderme;1,503
+333;2;30,0;Valparaiso;Vina del Mar;Cuenta Vista;25;5,0;5,0;4,0;4,0;3,0;7,0;;1,832
+334;1;61,0;Metropolitana;VALPARAISO;Cuenta Corriente;3;5,0;3,0;2,0;99,0;4,0;5,0;Mejorar el sitio web;0,409
+335;2;25,0;Coquimbo;Viña del Mar;Cuenta Vista;17;5,0;4,0;1,0;4,0;5,0;8,0;La app se cae seguido;1,287
+336;2;68,0;coquimbo;Puente Alto;Cuenta Vista;0;4,0;2,0;99,0;99,0;3,0;7,0;;1,679
+337;1;25,0;METROPOLITANA;Santiago ;Cuenta Corriente;7;3,0;5,0;3,0;5,0;4,0;7,0;Mejorar el sitio web;1,257
+338;1;19,0;Valparaiso;Viña del Mar;Cuenta Vista;18;4,0;5,0;3,0;4,0;2,0;9,0;Mejorar el sitio web;0,828
+339;2;79,0;Metropolitana;Valparaiso;Cuenta Vista;2;5,0;3,0;4,0;1,0;1,0;6,0;Todo bien;1,128
+340;1;48,0;Biobio;concepción;Cuenta Corriente;2;4,0;4,0;2,0;5,0;3,0;10,0;;0,912
+341;2;21,0;Valparaiso;Concepcion;Cuenta Vista;22;2,0;4,0;2,0;3,0;99,0;9,0;Excelente ejecutivo;0,416
+342;2;34,0;Metropolitana;Santiago;Tarjeta de Credito;0;4,0;4,0;5,0;5,0;4,0;9,0;Sin comentarios;2,101
+343;1;34,0;Metropolitana;concepción;Cuenta Corriente;17;5,0;3,0;3,0;4,0;4,0;5,0;Todo bien;1,661
+344;1;38,0;Valparaiso;Puente Alto;Tarjeta de Credito;23;5,0;4,0;5,0;3,0;2,0;5,0;Demoraron mucho en atenderme;0,628
+345;2;26,0;  Araucania;santiago;Tarjeta de Credito;6;4,0;4,0;4,0;3,0;5,0;7,0;Mejorar el sitio web;1,007
+346;2;46,0;METROPOLITANA;Padre Las Casas;Credito de Consumo;17;2,0;3,0;5,0;5,0;2,0;9,0;;1,926
+347;2;32,0;Araucania;Santiago;Cuenta Vista;13;1,0;4,0;3,0;3,0;5,0;8,0;;1,177
+348;1;61,0;  Metropolitana;STGO;Cuenta Vista;8;3,0;3,0;4,0;99,0;5,0;8,0;Buena atencion;1,797
+349;1;79,0;Biobio;STGO;Cuenta Vista;5;3,0;4,0;4,0;5,0;5,0;5,0;Demoraron mucho en atenderme;1,666
+350;2;74,0;Metropolitana;Santiago ;Cuenta Corriente;10;3,0;5,0;4,0;4,0;4,0;9,0;;1,374
+351;1;65,0;Valparaiso;Santiago ;Cuenta Corriente;5;2,0;4,0;5,0;5,0;5,0;8,0;;1,226
+352;2;62,0;Metropolitana;Santiago ;Cuenta Vista;25;4,0;4,0;99,0;5,0;5,0;8,0;;0,913
+353;1;65,0;metropolitana;la serena;Cuenta Corriente;4;3,0;4,0;5,0;5,0;1,0;8,0;Todo bien;1,24
+354;2;52,0;Metropolitana;Puente Alto;Tarjeta de Credito;14;4,0;2,0;4,0;5,0;4,0;5,0;;1,526
+355;2;48,0;araucania;Santiago;Cuenta Vista;23;99,0;4,0;5,0;4,0;1,0;9,0;Demoraron mucho en atenderme;1,055
+356;1;48,0;VALPARAISO;Padre Las Casas;Cuenta Corriente;17;4,0;5,0;2,0;4,0;3,0;8,0;Buena atencion;1,165
+357;1;49,0;Metropolitana;STGO;Cuenta Corriente;19;5,0;4,0;2,0;3,0;4,0;8,0;Buena atencion;0,452
+358;1;67,0;Metropolitana;VALPARAISO;Credito de Consumo;7;4,0;3,0;4,0;3,0;5,0;5,0;Muy malos los tiempos de espera;1,365
+359;1;50,0;Araucania ;Santiago;Cuenta Vista;4;2,0;4,0;4,0;2,0;5,0;10,0;La app se cae seguido;1,95
+360;1;79,0;Metropolitana;concepción;Cuenta Corriente;13;3,0;5,0;3,0;5,0;3,0;9,0;Todo bien;1,473
+361;2;30,0;Metropolitana;Santiago;Cuenta Vista;11;2,0;3,0;4,0;4,0;99,0;4,0;La app se cae seguido;2,123
+362;1;79,0;Metropolitana;concepción;Credito de Consumo;2;4,0;3,0;3,0;3,0;5,0;10,0;;0,462
+363;1;76,0;  Araucania;STGO;Cuenta Corriente;18;3,0;4,0;3,0;4,0;4,0;7,0;La app se cae seguido;2,003
+364;2;55,0;METROPOLITANA;Vina del Mar;Tarjeta de Credito;13;4,0;5,0;4,0;4,0;4,0;7,0;Mejorar el sitio web;0,42
+365;1;28,0;Valparaiso;Ovalle;Cuenta Corriente;15;5,0;4,0;5,0;3,0;1,0;9,0;;1,009
+366;2;26,0;Metropolitana;la serena;Cuenta Vista;3;4,0;1,0;5,0;5,0;3,0;8,0;;1,442
+367;2;29,0;Metropolitana;Puente Alto;Cuenta Vista;21;4,0;4,0;4,0;1,0;3,0;8,0;;0,565
+368;2;36,0;METROPOLITANA;Puente Alto;Tarjeta de Credito;16;99,0;4,0;5,0;3,0;3,0;8,0;Demoraron mucho en atenderme;0,565
+369;2;67,0;  Metropolitana;santiago;Cuenta Corriente;1;3,0;99,0;5,0;3,0;4,0;9,0;;1,59
+370;1;78,0;Araucania;concepción;Cuenta Vista;16;5,0;4,0;3,0;3,0;3,0;9,0;;1,556
+371;2;28,0;Metropolitana;Santiago ;Credito de Consumo;2;5,0;3,0;1,0;3,0;1,0;6,0;Mejorar el sitio web;2,18
+372;1;21,0;Metropolitana;STGO;Tarjeta de Credito;7;99,0;2,0;99,0;4,0;4,0;8,0;;0,796
+373;1;74,0;Biobio;Puente Alto;Cuenta Vista;5;5,0;4,0;2,0;5,0;3,0;4,0;;1,936
+374;2;34,0;Metropolitana;STGO;Cuenta Corriente;0;3,0;4,0;4,0;5,0;3,0;3,0;;1,057
+375;2;74,0;  Araucania;concepción;Tarjeta de Credito;0;4,0;4,0;5,0;3,0;2,0;10,0;Buena atencion;1,654
+376;1;60,0;Metropolitana;santiago;Credito de Consumo;19;4,0;4,0;99,0;5,0;4,0;0,0;Muy malos los tiempos de espera;1,385
+377;2;63,0;Metropolitana;VALPARAISO;Credito de Consumo;0;5,0;1,0;4,0;4,0;4,0;8,0;Demoraron mucho en atenderme;1,935
+378;2;53,0;Valparaiso;concepción;Cuenta Corriente;2;5,0;99,0;5,0;4,0;2,0;99,0;Excelente ejecutivo;1,124
+379;1;31,0;Valparaiso;STGO;Cuenta Vista;25;3,0;4,0;4,0;3,0;3,0;7,0;Excelente ejecutivo;1,088
+380;2;38,0;Metropolitana ;STGO;Tarjeta de Credito;5;3,0;5,0;1,0;4,0;3,0;10,0;Sin comentarios;1,044
+381;2;57,0;Biobio;STGO;Cuenta Corriente;15;4,0;4,0;5,0;3,0;5,0;7,0;;2,067
+382;2;47,0;Metropolitana;Santiago ;Cuenta Vista;5;5,0;5,0;5,0;4,0;5,0;9,0;Excelente ejecutivo;1,983
+383;2;76,0;Valparaiso;Santiago;Cuenta Corriente;17;2,0;3,0;3,0;3,0;5,0;5,0;Sin comentarios;1,509
+384;2;53,0;Metropolitana;Los Angeles;Cuenta Corriente;2;4,0;4,0;4,0;5,0;4,0;9,0;;1,655
+385;1;43,0;Biobio;Santiago ;Tarjeta de Credito;3;5,0;4,0;5,0;99,0;3,0;5,0;La app se cae seguido;1,936
+386;1;78,0;Metropolitana;STGO;Tarjeta de Credito;9;4,0;5,0;4,0;2,0;5,0;5,0;Demoraron mucho en atenderme;0,511
+387;1;26,0;  Biobio;VALPARAISO;Cuenta Corriente;2;4,0;4,0;5,0;4,0;4,0;2,0;Demoraron mucho en atenderme;0,452
+388;2;48,0;Valparaiso;Viña del Mar;Cuenta Corriente;2;99,0;4,0;99,0;3,0;4,0;8,0;;0,876
+389;2;26,0;Coquimbo;STGO;Credito de Consumo;7;4,0;2,0;4,0;4,0;99,0;10,0;;1,802
+390;1;999,0;biobio;temuco;Credito de Consumo;21;2,0;2,0;5,0;3,0;3,0;5,0;Todo bien;1,917
+391;1;42,0;Valparaiso;STGO;Cuenta Corriente;17;5,0;5,0;5,0;5,0;3,0;10,0;;1,556
+392;2;32,0;METROPOLITANA;Temuco;Cuenta Vista;10;4,0;3,0;99,0;1,0;1,0;9,0;;0,664
+393;1;58,0;Metropolitana;concepción;Tarjeta de Credito;7;5,0;4,0;5,0;1,0;4,0;7,0;Buena atencion;1,368
+394;2;71,0;Coquimbo;Vina del Mar;Cuenta Vista;18;4,0;3,0;1,0;4,0;3,0;10,0;Demoraron mucho en atenderme;0,828
+395;1;21,0;Valparaiso;La Serena;Tarjeta de Credito;2;1,0;99,0;4,0;1,0;4,0;8,0;Sin comentarios;1,615
+396;1;76,0;Metropolitana;Santiago;Cuenta Vista;24;2,0;5,0;1,0;2,0;3,0;9,0;;0,721
+397;1;43,0;Biobio;STGO;Cuenta Corriente;18;99,0;5,0;4,0;4,0;1,0;5,0;;0,999
+398;1;29,0;Araucania;Valparaiso;Cuenta Corriente;13;3,0;1,0;4,0;3,0;5,0;99,0;Mejorar el sitio web;0,622
+399;1;46,0;Metropolitana;La Serena;Cuenta Vista;10;5,0;1,0;99,0;3,0;4,0;10,0;;0,993
+400;2;19,0;METROPOLITANA;La Serena;Cuenta Vista;11;4,0;3,0;5,0;5,0;4,0;9,0;Sin comentarios;1,366
+401;1;50,0;Metropolitana;STGO;Credito de Consumo;6;5,0;5,0;4,0;4,0;3,0;7,0;;2,04
+402;2;77,0;Metropolitana;Villarrica;Tarjeta de Credito;11;4,0;4,0;4,0;4,0;5,0;7,0;La app se cae seguido;1,843
+403;2;54,0;Biobio;Ovalle;Cuenta Vista;10;5,0;3,0;4,0;5,0;5,0;7,0;Sin comentarios;0,692
+404;2;23,0;BIOBIO;santiago;Tarjeta de Credito;9;2,0;4,0;4,0;5,0;4,0;9,0;Demoraron mucho en atenderme;1,22
+405;2;72,0;  Metropolitana;temuco;Cuenta Corriente;4;5,0;3,0;5,0;5,0;5,0;8,0;La app se cae seguido;0,521
+406;2;44,0;  Metropolitana;valpo;Cuenta Corriente;1;4,0;4,0;3,0;5,0;5,0;10,0;;1,523
+407;2;68,0;Biobio;Ovalle;Cuenta Corriente;9;99,0;4,0;4,0;5,0;5,0;9,0;;2,064
+408;1;47,0;Metropolitana;Los Angeles;Cuenta Corriente;9;4,0;3,0;3,0;4,0;4,0;5,0;Mejorar el sitio web;1,224
+409;2;28,0;Biobio;Talcahuano;Cuenta Vista;5;3,0;3,0;5,0;2,0;5,0;7,0;Sin comentarios;1,907
+410;1;77,0;Metropolitana;VALPARAISO;Credito de Consumo;4;4,0;4,0;5,0;3,0;5,0;5,0;;0,708
+411;1;27,0;Metropolitana;Ovalle;Cuenta Corriente;5;2,0;99,0;99,0;1,0;4,0;7,0;;1,199
+412;1;61,0;Metropolitana;santiago;Cuenta Vista;14;2,0;4,0;4,0;3,0;4,0;7,0;;1,264
+413;2;41,0;Araucania;Puente Alto;Cuenta Corriente;3;3,0;4,0;3,0;4,0;5,0;7,0;Demoraron mucho en atenderme;0,41
+414;1;61,0;Coquimbo;Puente Alto;Credito de Consumo;5;99,0;4,0;4,0;99,0;5,0;6,0;La app se cae seguido;0,55
+415;2;75,0;METROPOLITANA;santiago;Cuenta Vista;14;4,0;5,0;3,0;5,0;2,0;2,0;;1,926
+416;2;77,0;Metropolitana;Puente Alto;Cuenta Vista;7;3,0;2,0;1,0;3,0;1,0;10,0;Todo bien;1,672
+417;2;21,0;Metropolitana;La Serena;Cuenta Vista;17;5,0;3,0;5,0;5,0;3,0;7,0;;0,667
+418;2;47,0;Valparaiso;Valparaiso;Cuenta Corriente;8;5,0;4,0;3,0;5,0;5,0;5,0;Excelente ejecutivo;1,199
+419;1;35,0;Metropolitana;Puente Alto;Cuenta Vista;3;5,0;4,0;99,0;4,0;4,0;7,0;Mejorar el sitio web;0,943
+420;1;47,0;Valparaiso;Padre Las Casas;Tarjeta de Credito;19;3,0;5,0;5,0;2,0;5,0;9,0;;1,54
+421;2;76,0;Metropolitana;La Serena;Cuenta Corriente;0;5,0;4,0;4,0;4,0;5,0;4,0;Mejorar el sitio web;0,781
+422;2;46,0;Valparaiso ;Valparaiso;Cuenta Vista;22;4,0;4,0;5,0;2,0;4,0;4,0;Buena atencion;1,262
+423;1;72,0;Araucania;Coquimbo;Cuenta Corriente;6;5,0;4,0;4,0;5,0;99,0;9,0;;1,409
+424;2;66,0;Araucania;STGO;Tarjeta de Credito;5;4,0;99,0;4,0;3,0;3,0;10,0;Mejorar el sitio web;1,822
+425;2;49,0;Coquimbo;Talcahuano;Cuenta Vista;14;4,0;5,0;4,0;5,0;2,0;10,0;;1,495
+426;1;75,0;Biobio;temuco;Credito de Consumo;23;4,0;2,0;5,0;4,0;2,0;8,0;;0,953
+427;1;80,0;Metropolitana;temuco;Cuenta Vista;12;5,0;4,0;4,0;4,0;4,0;10,0;;1,75
+428;1;53,0;Coquimbo ;Santiago ;Cuenta Vista;23;5,0;2,0;5,0;1,0;4,0;8,0;Excelente ejecutivo;1,308
+429;2;80,0;Valparaiso;Valparaiso;Cuenta Corriente;4;3,0;5,0;1,0;3,0;5,0;6,0;;1,981
+430;1;60,0;Biobio;Talcahuano;Cuenta Vista;23;5,0;4,0;4,0;99,0;5,0;8,0;Sin comentarios;1,793
+431;2;70,0;Valparaiso;santiago;Cuenta Corriente;8;99,0;4,0;3,0;3,0;5,0;5,0;;1,126
+432;2;52,0;Metropolitana;valpo;Tarjeta de Credito;7;5,0;4,0;5,0;3,0;4,0;8,0;Excelente ejecutivo;1,145
+433;1;26,0;biobio;Santiago;Tarjeta de Credito;9;4,0;1,0;5,0;5,0;5,0;10,0;Muy malos los tiempos de espera;0,815
+434;2;37,0;valparaiso;Coquimbo;Credito de Consumo;0;5,0;5,0;3,0;5,0;4,0;6,0;;0,913
+435;1;60,0;Coquimbo;Villarrica;Credito de Consumo;5;1,0;4,0;3,0;3,0;5,0;8,0;;1,946
+436;2;58,0;Metropolitana;santiago;Cuenta Vista;10;5,0;3,0;5,0;5,0;99,0;10,0;Mejorar el sitio web;1,53
+437;2;39,0;Metropolitana;Talcahuano;Cuenta Vista;20;5,0;3,0;5,0;4,0;99,0;2,0;Excelente ejecutivo;0,473
+438;1;24,0;Metropolitana;concepción;Cuenta Corriente;9;3,0;4,0;5,0;4,0;4,0;8,0;Todo bien;0,805
+439;2;74,0;Valparaiso;Santiago ;Cuenta Vista;1;5,0;1,0;5,0;99,0;4,0;8,0;;1,92
+440;1;70,0;Coquimbo;Coquimbo;Cuenta Corriente;21;4,0;5,0;3,0;4,0;5,0;8,0;Mejorar el sitio web;0,828
+441;2;19,0;Araucania;temuco;Cuenta Corriente;12;3,0;99,0;2,0;4,0;3,0;10,0;;0,503
+442;1;76,0;  Metropolitana;Puente Alto;Cuenta Corriente;5;5,0;4,0;4,0;4,0;5,0;8,0;Mejorar el sitio web;1,575
+443;2;55,0;Metropolitana;Santiago;Cuenta Vista;25;4,0;4,0;4,0;3,0;4,0;7,0;;1,173
+444;2;31,0;Araucania;Padre Las Casas;Cuenta Corriente;11;5,0;5,0;4,0;4,0;3,0;8,0;Todo bien;1,574
+445;1;20,0;COQUIMBO;concepción;Cuenta Corriente;21;4,0;2,0;2,0;4,0;4,0;10,0;;0,774
+446;2;67,0;Metropolitana;Los Angeles;Cuenta Vista;17;3,0;4,0;5,0;5,0;3,0;5,0;;1,486
+447;1;35,0;Metropolitana;Concepcion;Credito de Consumo;13;4,0;3,0;4,0;5,0;4,0;6,0;Excelente ejecutivo;0,917
+448;2;999,0;Valparaiso ;santiago;Credito de Consumo;14;4,0;2,0;5,0;5,0;4,0;9,0;Excelente ejecutivo;1,03
+449;2;40,0;Metropolitana;Los Angeles;Cuenta Corriente;25;5,0;5,0;5,0;5,0;2,0;10,0;;1,923
+450;1;26,0;Metropolitana;santiago;Tarjeta de Credito;18;4,0;4,0;4,0;4,0;3,0;5,0;Muy malos los tiempos de espera;1,704
+451;1;55,0;COQUIMBO;Puente Alto;Tarjeta de Credito;24;5,0;4,0;5,0;4,0;5,0;0,0;Excelente ejecutivo;1,59
+452;2;31,0;metropolitana;valpo;Credito de Consumo;6;4,0;99,0;5,0;4,0;4,0;6,0;;1,949
+453;2;42,0;Valparaiso;STGO;Cuenta Corriente;9;3,0;4,0;5,0;4,0;4,0;5,0;Sin comentarios;1,361
+454;1;49,0;VALPARAISO;STGO;Cuenta Vista;11;4,0;2,0;2,0;4,0;4,0;10,0;Todo bien;1,726
+455;2;30,0;Metropolitana;santiago;Tarjeta de Credito;25;4,0;3,0;4,0;5,0;4,0;5,0;Excelente ejecutivo;1,46
+456;2;46,0;Metropolitana;Los Angeles;Cuenta Vista;21;3,0;4,0;5,0;4,0;5,0;6,0;Sin comentarios;1,231
+457;1;56,0;Valparaiso;Concepcion;Cuenta Corriente;6;2,0;2,0;3,0;2,0;3,0;10,0;Todo bien;1,565
+458;1;56,0;Metropolitana;Viña del Mar;Credito de Consumo;2;5,0;3,0;3,0;5,0;3,0;8,0;;0,46
+459;1;33,0;Valparaiso;Santiago;Credito de Consumo;9;5,0;4,0;99,0;4,0;5,0;0,0;;1,859
+460;2;34,0;ARAUCANIA;Vina del Mar;Cuenta Vista;8;5,0;4,0;5,0;4,0;4,0;7,0;Sin comentarios;1,854
+461;1;34,0;Araucania;Santiago ;Cuenta Corriente;17;1,0;5,0;5,0;5,0;4,0;10,0;Todo bien;1,912
+462;1;70,0;Valparaiso ;valpo;Cuenta Corriente;10;2,0;2,0;4,0;4,0;5,0;9,0;Sin comentarios;0,88
+463;1;80,0;Metropolitana;Los Angeles;Credito de Consumo;5;4,0;5,0;4,0;1,0;4,0;0,0;Muy malos los tiempos de espera;1,623
+464;2;47,0;Coquimbo;Vina del Mar;Cuenta Corriente;21;3,0;1,0;3,0;3,0;2,0;8,0;Excelente ejecutivo;1,665
+465;9;37,0;  Valparaiso;santiago;Tarjeta de Credito;25;99,0;4,0;4,0;5,0;1,0;9,0;Todo bien;0,558
+466;2;80,0;Biobio;STGO;Tarjeta de Credito;15;3,0;3,0;4,0;3,0;3,0;4,0;La app se cae seguido;0,539
+467;1;22,0;biobio;valpo;Cuenta Vista;11;5,0;99,0;4,0;4,0;4,0;6,0;Todo bien;0,56
+468;2;57,0;Metropolitana;Talcahuano;Cuenta Corriente;4;3,0;3,0;2,0;3,0;5,0;10,0;;1,614
+469;2;62,0;Metropolitana;Santiago ;Cuenta Corriente;7;3,0;4,0;3,0;4,0;3,0;7,0;;1,575
+470;2;67,0;Metropolitana;santiago;Credito de Consumo;20;5,0;3,0;5,0;4,0;4,0;9,0;;0,501
+471;1;79,0;METROPOLITANA;valpo;Tarjeta de Credito;7;4,0;5,0;2,0;5,0;3,0;7,0;Excelente ejecutivo;1,513
+472;1;69,0;Coquimbo ;Vina del Mar;Cuenta Corriente;4;4,0;3,0;4,0;2,0;5,0;9,0;Muy malos los tiempos de espera;0,93
+473;2;46,0;Araucania;valpo;Cuenta Vista;24;4,0;2,0;4,0;2,0;99,0;5,0;Buena atencion;0,934
+474;1;50,0;Metropolitana;valpo;Cuenta Corriente;0;4,0;3,0;3,0;5,0;3,0;9,0;Sin comentarios;0,882
+475;2;41,0;Metropolitana ;Puente Alto;Cuenta Vista;7;5,0;4,0;4,0;3,0;4,0;5,0;;0,674
+476;1;61,0;Metropolitana;STGO;Cuenta Corriente;21;4,0;1,0;4,0;4,0;4,0;1,0;Sin comentarios;0,595
+477;2;79,0;Araucania;valpo;Cuenta Corriente;7;5,0;1,0;4,0;4,0;1,0;5,0;Mejorar el sitio web;1,945
+478;2;47,0;Araucania;Puente Alto;Cuenta Corriente;8;5,0;2,0;5,0;4,0;5,0;6,0;;1,145
+479;1;58,0;Metropolitana;valpo;Cuenta Corriente;19;4,0;3,0;4,0;4,0;4,0;9,0;Excelente ejecutivo;1,437
+480;2;54,0;Valparaiso;Ovalle;Cuenta Vista;3;4,0;4,0;5,0;4,0;3,0;9,0;Demoraron mucho en atenderme;1,642
+481;2;46,0;Valparaiso;Puente Alto;Credito de Consumo;8;3,0;4,0;5,0;5,0;3,0;9,0;Todo bien;1,353
+482;1;48,0;metropolitana;santiago;Cuenta Corriente;17;4,0;5,0;3,0;5,0;4,0;10,0;Demoraron mucho en atenderme;0,863
+483;2;57,0;Biobio;STGO;Cuenta Vista;13;4,0;1,0;5,0;3,0;4,0;7,0;Demoraron mucho en atenderme;2,167
+484;2;49,0;Metropolitana ;STGO;Credito de Consumo;22;4,0;5,0;4,0;2,0;4,0;10,0;La app se cae seguido;0,504
+485;1;79,0;Araucania;Coquimbo;Credito de Consumo;3;1,0;4,0;3,0;4,0;4,0;10,0;;0,922
+486;2;60,0;Metropolitana;Puente Alto;Tarjeta de Credito;25;5,0;1,0;5,0;4,0;99,0;3,0;Todo bien;1,178
+487;1;46,0;Biobio;Santiago;Cuenta Corriente;13;4,0;3,0;4,0;4,0;5,0;9,0;Excelente ejecutivo;1,982
+488;2;72,0;Valparaiso;Temuco;Cuenta Corriente;4;5,0;5,0;4,0;4,0;2,0;6,0;;0,827
+489;2;59,0;COQUIMBO;Talcahuano;Cuenta Corriente;20;4,0;4,0;3,0;2,0;3,0;10,0;;1,256
+490;2;24,0;Valparaiso ;Santiago;Cuenta Corriente;2;3,0;3,0;5,0;5,0;5,0;10,0;Todo bien;2,049
+491;2;27,0;Biobio;Ovalle;Tarjeta de Credito;19;2,0;4,0;4,0;3,0;3,0;5,0;;1,003
+492;1;32,0;Metropolitana;Viña del Mar;Cuenta Corriente;9;4,0;4,0;5,0;2,0;5,0;7,0;;1,894
+493;2;58,0;Metropolitana;Padre Las Casas;Tarjeta de Credito;12;5,0;5,0;4,0;4,0;1,0;4,0;Mejorar el sitio web;0,585
+494;1;40,0;Valparaiso;valpo;Cuenta Corriente;11;4,0;4,0;5,0;4,0;5,0;9,0;Todo bien;1,602
+495;1;64,0;Metropolitana ;Los Angeles;Tarjeta de Credito;15;3,0;4,0;5,0;4,0;3,0;9,0;;2,133
+496;2;68,0;araucania;concepción;Cuenta Corriente;2;4,0;4,0;4,0;5,0;5,0;9,0;Todo bien;1,537
+497;2;43,0;Metropolitana;Santiago ;Cuenta Corriente;19;4,0;2,0;4,0;5,0;5,0;8,0;Mejorar el sitio web;0,971
+498;1;31,0;METROPOLITANA;Concepcion;Cuenta Corriente;7;2,0;4,0;5,0;4,0;4,0;3,0;La app se cae seguido;0,817
+499;1;46,0;  Metropolitana;Santiago;Cuenta Corriente;15;4,0;4,0;5,0;2,0;4,0;6,0;;1,65
+500;2;50,0;Metropolitana;STGO;Tarjeta de Credito;19;4,0;5,0;2,0;4,0;4,0;5,0;Demoraron mucho en atenderme;1,455
+501;1;36,0;Metropolitana;concepción;Cuenta Vista;23;4,0;3,0;4,0;4,0;4,0;8,0;Buena atencion;1,978
+502;9;58,0;Valparaiso;temuco;Cuenta Corriente;21;5,0;2,0;4,0;4,0;4,0;6,0;;1,461
+503;1;47,0;Coquimbo;STGO;Cuenta Corriente;24;4,0;2,0;4,0;5,0;2,0;6,0;;1,671
+504;2;59,0;Metropolitana;santiago;Cuenta Vista;14;4,0;5,0;3,0;2,0;3,0;9,0;Buena atencion;1,225
+505;1;51,0;Metropolitana;Coquimbo;Cuenta Corriente;18;3,0;99,0;5,0;5,0;4,0;8,0;Demoraron mucho en atenderme;0,773
+506;2;27,0;Metropolitana;La Serena;Cuenta Vista;25;3,0;4,0;3,0;3,0;5,0;7,0;;1,152
+507;2;60,0;metropolitana;Temuco;Cuenta Vista;12;4,0;3,0;5,0;3,0;4,0;2,0;La app se cae seguido;1,444
+508;2;33,0;metropolitana;VALPARAISO;Tarjeta de Credito;0;1,0;4,0;5,0;5,0;5,0;6,0;Todo bien;0,772
+509;2;69,0;METROPOLITANA;Puente Alto;Cuenta Vista;18;2,0;99,0;3,0;5,0;4,0;5,0;Mejorar el sitio web;0,673
+510;2;20,0;METROPOLITANA;STGO;Cuenta Corriente;20;1,0;4,0;1,0;4,0;4,0;9,0;Demoraron mucho en atenderme;1,532
+511;2;44,0;Araucania ;valpo;Cuenta Corriente;7;3,0;4,0;5,0;5,0;4,0;6,0;Todo bien;1,077
+512;2;80,0;Araucania;Valparaiso;Cuenta Corriente;14;5,0;5,0;5,0;4,0;5,0;9,0;;0,44
+513;2;78,0;Metropolitana;Padre Las Casas;Credito de Consumo;21;3,0;4,0;4,0;4,0;2,0;0,0;Sin comentarios;2,051
+514;1;65,0;Biobio;Santiago ;Cuenta Corriente;2;5,0;5,0;1,0;4,0;2,0;10,0;Buena atencion;1,837
+515;1;55,0;Valparaiso;Vina del Mar;Tarjeta de Credito;1;5,0;4,0;5,0;5,0;2,0;7,0;Sin comentarios;0,445
+516;2;51,0;Coquimbo;santiago;Cuenta Corriente;20;5,0;3,0;4,0;5,0;2,0;3,0;;1,305
+517;1;35,0;metropolitana;Santiago ;Cuenta Vista;13;5,0;5,0;5,0;4,0;3,0;5,0;Todo bien;0,864
+518;1;73,0;Biobio;Los Angeles;Cuenta Corriente;21;5,0;5,0;3,0;4,0;4,0;8,0;;2,069
+519;2;55,0;Biobio;Concepcion;Cuenta Vista;2;3,0;5,0;4,0;4,0;4,0;4,0;;1,649
+520;1;45,0;Coquimbo;Santiago ;Cuenta Vista;23;5,0;5,0;4,0;4,0;99,0;10,0;Muy malos los tiempos de espera;1,73
+521;1;63,0;Coquimbo;santiago;Tarjeta de Credito;6;5,0;1,0;4,0;5,0;4,0;7,0;Buena atencion;0,886
+522;1;61,0;Coquimbo;Puente Alto;Tarjeta de Credito;25;3,0;3,0;3,0;4,0;3,0;5,0;Sin comentarios;1,898
+523;2;68,0;Metropolitana;Viña del Mar;Cuenta Corriente;20;2,0;4,0;3,0;5,0;2,0;99,0;Buena atencion;1,514
+524;1;20,0;  Coquimbo;santiago;Cuenta Corriente;18;4,0;5,0;5,0;4,0;5,0;7,0;Muy malos los tiempos de espera;0,496
+525;2;49,0;Metropolitana;Talcahuano;Cuenta Corriente;11;4,0;4,0;2,0;5,0;5,0;9,0;Buena atencion;0,688
+526;9;50,0;Valparaiso;Talcahuano;Tarjeta de Credito;10;99,0;4,0;99,0;2,0;5,0;4,0;Buena atencion;1,677
+527;2;62,0;Metropolitana;Puente Alto;Cuenta Corriente;8;4,0;5,0;3,0;2,0;4,0;9,0;Buena atencion;0,765
+528;2;40,0;Metropolitana;Puente Alto;Credito de Consumo;17;5,0;5,0;5,0;5,0;2,0;9,0;Todo bien;0,732
+529;1;66,0;metropolitana;concepción;Tarjeta de Credito;0;5,0;4,0;4,0;5,0;5,0;9,0;Mejorar el sitio web;1,573
+530;2;26,0;Metropolitana;Talcahuano;Cuenta Vista;9;99,0;3,0;4,0;5,0;5,0;8,0;;0,704
+531;9;42,0;Metropolitana;Talcahuano;Credito de Consumo;13;5,0;3,0;4,0;2,0;4,0;7,0;;0,711
+532;2;61,0;Coquimbo;concepción;Cuenta Corriente;12;4,0;5,0;2,0;5,0;4,0;8,0;Excelente ejecutivo;1,028
+533;1;76,0;Valparaiso;La Serena;Cuenta Vista;19;4,0;5,0;5,0;4,0;4,0;5,0;;1,765
+534;2;24,0;Metropolitana;Puente Alto;Tarjeta de Credito;9;4,0;1,0;3,0;4,0;5,0;5,0;Mejorar el sitio web;1,364
+535;1;45,0;METROPOLITANA;Santiago;Cuenta Vista;10;3,0;3,0;4,0;4,0;4,0;5,0;Todo bien;1,631
+536;2;69,0;Valparaiso;la serena;Cuenta Vista;4;5,0;3,0;4,0;3,0;3,0;8,0;La app se cae seguido;1,56
+537;2;40,0;Coquimbo;Temuco;Cuenta Vista;2;5,0;2,0;2,0;5,0;1,0;6,0;La app se cae seguido;0,488
+538;1;20,0;BIOBIO;Santiago ;Cuenta Corriente;14;5,0;4,0;4,0;3,0;4,0;9,0;Excelente ejecutivo;1,588
+539;1;72,0;Metropolitana;santiago;Tarjeta de Credito;13;3,0;3,0;4,0;5,0;5,0;0,0;Excelente ejecutivo;0,763
+540;2;80,0;Araucania;Los Angeles;Cuenta Corriente;9;3,0;4,0;5,0;5,0;4,0;10,0;Excelente ejecutivo;1,855
+541;1;52,0;Valparaiso;Viña del Mar;Tarjeta de Credito;25;5,0;5,0;5,0;99,0;4,0;10,0;;1,085
+542;1;46,0;Metropolitana;Coquimbo;Cuenta Corriente;25;4,0;3,0;5,0;5,0;5,0;9,0;Excelente ejecutivo;0,42
+543;1;61,0;Valparaiso;La Serena;Cuenta Vista;16;5,0;1,0;4,0;2,0;2,0;7,0;;0,724
+544;1;53,0;Valparaiso;Los Angeles;Cuenta Corriente;9;3,0;3,0;5,0;3,0;5,0;10,0;Sin comentarios;1,886
+545;2;57,0;Biobio;Puente Alto;Cuenta Vista;5;3,0;5,0;3,0;2,0;5,0;8,0;Mejorar el sitio web;0,648
+546;1;27,0;  Araucania;Viña del Mar;Cuenta Vista;20;5,0;4,0;4,0;4,0;99,0;6,0;La app se cae seguido;0,836
+547;1;75,0;Metropolitana;Santiago ;Tarjeta de Credito;6;4,0;99,0;4,0;99,0;5,0;8,0;;1,879
+548;2;60,0;Metropolitana;Villarrica;Cuenta Corriente;16;4,0;4,0;4,0;3,0;5,0;10,0;;0,785
+549;2;51,0;Metropolitana;STGO;Cuenta Vista;12;5,0;5,0;4,0;4,0;4,0;8,0;Mejorar el sitio web;1,374
+550;1;41,0;Valparaiso;La Serena;Tarjeta de Credito;5;4,0;5,0;3,0;5,0;3,0;9,0;Mejorar el sitio web;1,851
+551;2;48,0;Metropolitana;STGO;Cuenta Corriente;17;3,0;2,0;3,0;3,0;4,0;7,0;Muy malos los tiempos de espera;0,512
+552;1;63,0;Valparaiso;STGO;Cuenta Vista;23;5,0;4,0;3,0;5,0;2,0;7,0;Excelente ejecutivo;0,589
+553;2;33,0;  Metropolitana;Los Angeles;Cuenta Corriente;19;2,0;5,0;4,0;3,0;5,0;8,0;Todo bien;1,095
+554;1;54,0;Metropolitana;STGO;Cuenta Corriente;22;4,0;5,0;5,0;2,0;5,0;6,0;;1,038
+555;9;26,0;Biobio;STGO;Tarjeta de Credito;5;3,0;5,0;4,0;4,0;3,0;8,0;Buena atencion;0,801
+556;2;24,0;COQUIMBO;Santiago ;Tarjeta de Credito;3;5,0;1,0;4,0;4,0;2,0;4,0;Excelente ejecutivo;0,871
+557;2;66,0;biobio;La Serena;Cuenta Corriente;18;5,0;4,0;2,0;5,0;3,0;99,0;;0,407
+558;2;34,0;Araucania;Ovalle;Credito de Consumo;20;4,0;3,0;3,0;4,0;4,0;10,0;;1,326
+559;1;28,0;Valparaiso;Villarrica;Credito de Consumo;20;4,0;4,0;2,0;3,0;5,0;7,0;Buena atencion;2,03
+560;2;45,0;  Biobio;santiago;Tarjeta de Credito;16;5,0;3,0;2,0;5,0;4,0;10,0;;0,944
+561;2;47,0;Metropolitana;Concepcion;Cuenta Corriente;20;3,0;4,0;3,0;5,0;4,0;10,0;Excelente ejecutivo;1,549
+562;2;19,0;Metropolitana;Santiago ;Credito de Consumo;5;3,0;3,0;2,0;4,0;5,0;99,0;La app se cae seguido;2,133
+563;2;61,0;Araucania;Concepcion;Cuenta Corriente;11;5,0;3,0;3,0;5,0;3,0;7,0;;0,826
+564;1;50,0;Valparaiso ;Valparaiso;Tarjeta de Credito;16;2,0;4,0;99,0;5,0;5,0;6,0;Todo bien;1,214
+565;2;79,0;Valparaiso;Coquimbo;Cuenta Vista;13;5,0;4,0;5,0;5,0;5,0;7,0;Muy malos los tiempos de espera;0,888
+566;1;37,0;Metropolitana;VALPARAISO;Tarjeta de Credito;6;5,0;1,0;3,0;4,0;5,0;7,0;La app se cae seguido;0,552
+567;2;75,0;Araucania;Ovalle;Cuenta Corriente;2;5,0;4,0;5,0;4,0;5,0;9,0;Sin comentarios;1,881
+568;2;40,0;Metropolitana;Vina del Mar;Credito de Consumo;25;3,0;4,0;3,0;4,0;3,0;6,0;Excelente ejecutivo;1,833
+569;1;26,0;metropolitana;La Serena;Tarjeta de Credito;18;3,0;4,0;99,0;3,0;3,0;6,0;;0,796
+570;2;20,0;Metropolitana;valpo;Tarjeta de Credito;24;3,0;4,0;3,0;3,0;4,0;4,0;;1,537
+571;2;67,0;Metropolitana;Puente Alto;Cuenta Corriente;4;4,0;5,0;5,0;4,0;99,0;2,0;Sin comentarios;0,413
+572;2;71,0;Metropolitana;Coquimbo;Cuenta Corriente;14;5,0;5,0;5,0;5,0;3,0;9,0;;0,839
+573;2;31,0;VALPARAISO;la serena;Cuenta Vista;20;3,0;3,0;4,0;99,0;5,0;10,0;Sin comentarios;0,503
+574;2;32,0;Coquimbo;STGO;Cuenta Vista;25;2,0;3,0;99,0;3,0;5,0;9,0;;0,936
+575;2;47,0;Metropolitana;concepción;Cuenta Vista;4;3,0;5,0;2,0;4,0;5,0;10,0;Sin comentarios;0,703
+576;2;34,0;Valparaiso;Puente Alto;Credito de Consumo;24;4,0;5,0;2,0;4,0;5,0;1,0;La app se cae seguido;1,625
+577;2;52,0;Valparaiso;Santiago ;Cuenta Corriente;22;4,0;4,0;4,0;5,0;2,0;6,0;La app se cae seguido;1,242
+578;1;77,0;Coquimbo;Coquimbo;Credito de Consumo;7;3,0;4,0;4,0;5,0;4,0;3,0;Buena atencion;0,421
+579;2;41,0;Valparaiso;la serena;Tarjeta de Credito;16;1,0;2,0;5,0;4,0;5,0;8,0;Excelente ejecutivo;1,012
+580;2;20,0;Metropolitana;STGO;Cuenta Corriente;15;2,0;3,0;3,0;4,0;5,0;5,0;Todo bien;1,111
+581;2;31,0;Metropolitana;Los Angeles;Cuenta Vista;17;4,0;3,0;4,0;5,0;3,0;1,0;Sin comentarios;0,685
+582;2;47,0;Metropolitana;Coquimbo;Cuenta Corriente;25;99,0;4,0;3,0;5,0;5,0;10,0;Buena atencion;1,212
+583;2;58,0;Metropolitana ;santiago;Cuenta Vista;13;3,0;5,0;5,0;3,0;3,0;7,0;;2,194
+584;2;44,0;Valparaiso;santiago;Cuenta Corriente;15;5,0;4,0;4,0;99,0;3,0;2,0;Sin comentarios;2,029
+585;2;35,0;metropolitana;Viña del Mar;Cuenta Corriente;0;4,0;4,0;99,0;5,0;99,0;9,0;Buena atencion;1,065
+586;1;23,0;valparaiso;STGO;Cuenta Vista;25;1,0;4,0;3,0;5,0;3,0;6,0;;1,525
+587;2;72,0;Metropolitana;Viña del Mar;Credito de Consumo;2;4,0;2,0;4,0;4,0;4,0;10,0;;1,756
+588;9;50,0;COQUIMBO;Santiago ;Cuenta Vista;7;4,0;4,0;3,0;5,0;3,0;8,0;;0,464
+589;2;58,0;Coquimbo;Talcahuano;Tarjeta de Credito;1;4,0;5,0;2,0;4,0;4,0;2,0;;1,918
+590;1;41,0;Valparaiso;Santiago;Tarjeta de Credito;8;5,0;99,0;4,0;4,0;3,0;9,0;;1,333
+591;2;70,0;Araucania;VALPARAISO;Cuenta Corriente;13;3,0;99,0;5,0;3,0;5,0;8,0;;1,007
+592;1;78,0;METROPOLITANA;Santiago;Cuenta Corriente;17;5,0;99,0;5,0;2,0;5,0;5,0;;1,01
+593;2;40,0;metropolitana;Santiago ;Credito de Consumo;22;5,0;5,0;5,0;3,0;3,0;6,0;Sin comentarios;0,876
+594;2;47,0;Valparaiso;La Serena;Tarjeta de Credito;16;1,0;99,0;1,0;5,0;3,0;3,0;;1,635
+595;2;37,0;Valparaiso;Puente Alto;Tarjeta de Credito;16;3,0;5,0;5,0;2,0;5,0;3,0;;1,545
+596;1;68,0;Valparaiso;concepción;Credito de Consumo;11;2,0;4,0;5,0;3,0;5,0;5,0;Buena atencion;1,906
+597;2;67,0;Metropolitana;Santiago ;Cuenta Vista;22;2,0;4,0;4,0;2,0;99,0;10,0;;2,097
+598;2;21,0;Metropolitana ;la serena;Cuenta Vista;14;1,0;5,0;5,0;5,0;4,0;6,0;;1,347
+599;1;76,0;Metropolitana;Viña del Mar;Cuenta Corriente;2;5,0;99,0;99,0;5,0;2,0;9,0;La app se cae seguido;2,071
+600;2;44,0;Valparaiso;La Serena;Credito de Consumo;18;4,0;5,0;4,0;4,0;4,0;8,0;Excelente ejecutivo;1,022
+601;2;25,0;Araucania;Santiago ;Cuenta Vista;12;2,0;5,0;2,0;2,0;4,0;10,0;;1,122
+602;1;76,0;Biobio;valpo;Cuenta Vista;25;5,0;4,0;99,0;2,0;3,0;1,0;Excelente ejecutivo;0,548
+603;2;73,0;Valparaiso;Viña del Mar;Credito de Consumo;4;4,0;5,0;4,0;3,0;5,0;8,0;Mejorar el sitio web;0,892
+604;1;37,0;Metropolitana;la serena;Credito de Consumo;24;5,0;4,0;1,0;4,0;3,0;9,0;;1,683
+605;2;42,0;Metropolitana;Santiago ;Cuenta Corriente;1;3,0;5,0;5,0;4,0;2,0;10,0;;0,708
+606;1;75,0;metropolitana;santiago;Tarjeta de Credito;4;3,0;4,0;4,0;5,0;4,0;5,0;;1,912
+607;2;51,0;Valparaiso;la serena;Credito de Consumo;15;4,0;5,0;5,0;5,0;4,0;1,0;;0,665
+608;1;72,0;metropolitana;temuco;Cuenta Corriente;14;5,0;3,0;5,0;5,0;4,0;9,0;Todo bien;2,17
+609;2;33,0;Coquimbo;Santiago ;Cuenta Vista;25;4,0;5,0;3,0;5,0;5,0;10,0;;0,473
+610;2;21,0;VALPARAISO;Puente Alto;Cuenta Corriente;14;3,0;3,0;5,0;4,0;5,0;7,0;Todo bien;0,43
+611;2;60,0;Valparaiso;Santiago;Tarjeta de Credito;17;2,0;1,0;4,0;2,0;2,0;8,0;Buena atencion;1,297
+612;1;58,0;Valparaiso;Santiago;Cuenta Corriente;16;3,0;3,0;5,0;3,0;3,0;8,0;;1,634
+613;1;49,0;metropolitana;Villarrica;Cuenta Corriente;10;3,0;3,0;99,0;5,0;3,0;8,0;Excelente ejecutivo;1,899
+614;2;68,0;Metropolitana;VALPARAISO;Cuenta Vista;25;3,0;4,0;4,0;5,0;5,0;8,0;;0,961
+615;1;52,0;Valparaiso;temuco;Cuenta Vista;19;3,0;5,0;5,0;3,0;4,0;8,0;Muy malos los tiempos de espera;1,728
+616;2;72,0;Araucania;Ovalle;Cuenta Vista;1;4,0;99,0;4,0;4,0;4,0;9,0;Excelente ejecutivo;2,038
+617;1;79,0;Metropolitana;Concepcion;Credito de Consumo;22;5,0;2,0;3,0;5,0;4,0;9,0;;1,441
+618;1;47,0;METROPOLITANA;Padre Las Casas;Cuenta Vista;4;4,0;5,0;4,0;4,0;2,0;6,0;Demoraron mucho en atenderme;1,368
+619;1;80,0;Biobio;santiago;Cuenta Vista;23;5,0;4,0;4,0;5,0;2,0;7,0;Sin comentarios;1,684
+620;1;34,0;Araucania;Viña del Mar;Cuenta Corriente;12;5,0;1,0;4,0;3,0;5,0;7,0;;1,746
+621;2;47,0;biobio;Padre Las Casas;Credito de Consumo;20;5,0;3,0;3,0;3,0;4,0;9,0;Mejorar el sitio web;0,676
+622;2;43,0;Coquimbo;Puente Alto;Credito de Consumo;9;99,0;4,0;99,0;4,0;4,0;7,0;;1,06
+623;2;79,0;Coquimbo;concepción;Cuenta Vista;17;5,0;5,0;5,0;2,0;4,0;10,0;;1,395
+624;2;80,0;COQUIMBO;santiago;Tarjeta de Credito;3;5,0;5,0;4,0;4,0;5,0;7,0;Sin comentarios;1,271
+625;2;58,0;Valparaiso;STGO;Cuenta Vista;21;5,0;4,0;4,0;4,0;4,0;9,0;Sin comentarios;1,124
+626;1;64,0;  Valparaiso;Ovalle;Cuenta Vista;23;2,0;3,0;5,0;3,0;4,0;9,0;Muy malos los tiempos de espera;1,655
+627;2;67,0;Metropolitana ;Santiago;Cuenta Vista;6;4,0;4,0;3,0;3,0;4,0;8,0;Muy malos los tiempos de espera;1,751
+628;1;48,0;Biobio;Santiago ;Tarjeta de Credito;22;2,0;4,0;4,0;4,0;4,0;6,0;Buena atencion;0,803
+629;1;77,0;VALPARAISO;Puente Alto;Tarjeta de Credito;4;4,0;4,0;3,0;4,0;4,0;6,0;;1,119
+630;1;59,0;Metropolitana;Santiago;Cuenta Vista;24;2,0;5,0;5,0;2,0;4,0;8,0;Demoraron mucho en atenderme;1,391
+631;2;25,0;Biobio;Talcahuano;Cuenta Vista;12;4,0;4,0;5,0;4,0;4,0;4,0;Mejorar el sitio web;1,45
+632;2;77,0;Metropolitana;Santiago ;Cuenta Corriente;9;4,0;5,0;4,0;5,0;3,0;5,0;Mejorar el sitio web;1,899
+633;2;43,0;Metropolitana;Puente Alto;Cuenta Corriente;6;4,0;3,0;4,0;4,0;3,0;6,0;Excelente ejecutivo;1,779
+634;2;75,0;  Valparaiso;Concepcion;Tarjeta de Credito;25;3,0;5,0;1,0;3,0;2,0;9,0;La app se cae seguido;1,043
+635;1;29,0;Metropolitana;santiago;Tarjeta de Credito;9;5,0;4,0;5,0;4,0;2,0;10,0;Todo bien;1,233
+636;9;31,0;Metropolitana;concepción;Cuenta Corriente;23;3,0;4,0;3,0;4,0;4,0;8,0;Sin comentarios;0,674
+637;2;80,0;Biobio;Vina del Mar;Cuenta Corriente;2;4,0;4,0;4,0;5,0;4,0;5,0;;1,776
+638;2;75,0;Metropolitana;valpo;Credito de Consumo;1;3,0;5,0;99,0;1,0;5,0;10,0;;1,386
+639;1;75,0;Valparaiso ;Santiago;Cuenta Corriente;23;3,0;4,0;3,0;4,0;5,0;7,0;Muy malos los tiempos de espera;0,593
+640;2;999,0;araucania;la serena;Tarjeta de Credito;22;3,0;5,0;3,0;99,0;3,0;7,0;Excelente ejecutivo;0,432
+641;1;59,0;Metropolitana;concepción;Cuenta Vista;5;3,0;2,0;4,0;3,0;2,0;9,0;;1,069
+642;2;40,0;Metropolitana;Santiago ;Cuenta Corriente;17;5,0;4,0;5,0;3,0;1,0;9,0;;1,186
+643;2;39,0;Metropolitana;Viña del Mar;Cuenta Vista;5;3,0;5,0;2,0;4,0;4,0;8,0;;1,271
+644;1;27,0;Metropolitana;Talcahuano;Tarjeta de Credito;13;4,0;4,0;4,0;5,0;5,0;8,0;;1,906
+645;1;80,0;METROPOLITANA;Vina del Mar;Tarjeta de Credito;19;3,0;3,0;5,0;5,0;4,0;5,0;;1,849
+646;2;55,0;Biobio;Santiago;Tarjeta de Credito;2;99,0;1,0;3,0;5,0;3,0;9,0;Todo bien;0,838
+647;2;55,0;Valparaiso;Santiago;Tarjeta de Credito;11;3,0;3,0;5,0;3,0;3,0;10,0;Buena atencion;2,14
+648;2;59,0;BIOBIO;Santiago;Cuenta Corriente;11;4,0;4,0;4,0;3,0;2,0;6,0;;1,362
+649;1;69,0;valparaiso;santiago;Cuenta Corriente;5;3,0;2,0;5,0;3,0;1,0;6,0;;1,689
+650;2;30,0;Metropolitana;Temuco;Cuenta Vista;13;1,0;1,0;5,0;4,0;1,0;5,0;La app se cae seguido;2,123
+651;1;53,0;Metropolitana;STGO;Cuenta Vista;17;5,0;5,0;5,0;4,0;3,0;2,0;;0,733
+652;2;61,0;coquimbo;Viña del Mar;Credito de Consumo;21;5,0;4,0;2,0;3,0;4,0;2,0;La app se cae seguido;1,551
+653;1;56,0;ARAUCANIA;Puente Alto;Cuenta Corriente;20;3,0;4,0;3,0;4,0;4,0;10,0;;1,867
+654;2;74,0;Metropolitana;santiago;Tarjeta de Credito;25;5,0;99,0;5,0;5,0;3,0;99,0;;1,916
+655;2;46,0;metropolitana;STGO;Tarjeta de Credito;17;4,0;5,0;4,0;3,0;3,0;5,0;Buena atencion;1,618
+656;1;76,0;metropolitana;Santiago ;Cuenta Corriente;17;5,0;99,0;5,0;3,0;3,0;8,0;Buena atencion;0,846
+657;2;53,0;  Metropolitana;Santiago;Credito de Consumo;25;99,0;4,0;4,0;5,0;5,0;9,0;Mejorar el sitio web;1,695
+658;1;58,0;Metropolitana;VALPARAISO;Tarjeta de Credito;20;3,0;2,0;3,0;4,0;5,0;9,0;Buena atencion;1,683
+659;1;55,0;Araucania;Vina del Mar;Credito de Consumo;7;2,0;4,0;3,0;5,0;3,0;8,0;Excelente ejecutivo;1,136
+660;1;43,0;Valparaiso;Santiago ;Cuenta Corriente;12;5,0;5,0;5,0;5,0;4,0;7,0;;1,167
+661;1;38,0;Metropolitana;Talcahuano;Cuenta Corriente;2;5,0;4,0;5,0;4,0;4,0;8,0;;2,156
+662;2;80,0;Valparaiso;santiago;Cuenta Corriente;24;5,0;4,0;3,0;4,0;5,0;10,0;Mejorar el sitio web;1,865
+663;2;69,0;biobio;Santiago;Credito de Consumo;25;3,0;99,0;5,0;3,0;5,0;6,0;La app se cae seguido;0,451
+664;2;59,0;Metropolitana;Los Angeles;Tarjeta de Credito;13;4,0;99,0;4,0;3,0;5,0;9,0;;0,809
+665;2;19,0;Araucania;Viña del Mar;Tarjeta de Credito;14;4,0;5,0;2,0;5,0;3,0;6,0;;0,454
+666;2;52,0;Metropolitana;STGO;Cuenta Vista;6;3,0;4,0;4,0;4,0;4,0;8,0;Mejorar el sitio web;1,185
+667;1;77,0;Valparaiso ;Puente Alto;Cuenta Corriente;23;5,0;3,0;3,0;4,0;4,0;8,0;;1,643
+668;2;68,0;BIOBIO;La Serena;Cuenta Vista;10;4,0;4,0;4,0;3,0;4,0;10,0;Sin comentarios;1,428
+669;1;18,0;Valparaiso;santiago;Cuenta Vista;18;5,0;3,0;5,0;3,0;1,0;6,0;La app se cae seguido;0,415
+670;2;51,0;METROPOLITANA;Valparaiso;Cuenta Corriente;0;3,0;3,0;3,0;4,0;2,0;10,0;Demoraron mucho en atenderme;0,565
+671;1;66,0;Biobio;Villarrica;Cuenta Corriente;7;3,0;3,0;5,0;3,0;5,0;7,0;;1,721
+672;2;78,0;Valparaiso;Ovalle;Tarjeta de Credito;11;5,0;3,0;5,0;5,0;4,0;10,0;;1,066
+673;1;999,0;Coquimbo;Talcahuano;Cuenta Corriente;12;4,0;5,0;3,0;5,0;4,0;8,0;;0,958
+674;1;61,0;Metropolitana;Viña del Mar;Cuenta Vista;17;4,0;99,0;1,0;1,0;5,0;5,0;Muy malos los tiempos de espera;0,831
+675;1;64,0;Araucania;santiago;Cuenta Vista;16;5,0;5,0;4,0;4,0;5,0;8,0;Demoraron mucho en atenderme;1,858
+676;1;64,0;Valparaiso;Los Angeles;Cuenta Vista;3;3,0;2,0;4,0;4,0;4,0;10,0;Muy malos los tiempos de espera;1,232
+677;1;55,0;Araucania;STGO;Cuenta Corriente;1;4,0;4,0;5,0;3,0;4,0;99,0;;0,691
+678;2;999,0;Metropolitana;santiago;Cuenta Corriente;23;4,0;2,0;1,0;4,0;3,0;8,0;Sin comentarios;1,155
+679;1;58,0;Coquimbo;VALPARAISO;Cuenta Corriente;0;4,0;4,0;5,0;4,0;3,0;9,0;Muy malos los tiempos de espera;1,503
+680;2;59,0;Coquimbo;valpo;Credito de Consumo;20;5,0;1,0;3,0;4,0;3,0;6,0;Excelente ejecutivo;0,772
+681;2;49,0;metropolitana;santiago;Cuenta Corriente;8;4,0;4,0;4,0;2,0;5,0;6,0;;1,794
+682;2;32,0;valparaiso;STGO;Cuenta Vista;3;5,0;3,0;5,0;2,0;1,0;9,0;;1,297
+683;2;47,0;metropolitana;STGO;Cuenta Vista;25;3,0;3,0;4,0;5,0;4,0;8,0;;1,182
+684;1;79,0;Metropolitana;STGO;Tarjeta de Credito;4;3,0;4,0;4,0;2,0;4,0;10,0;Mejorar el sitio web;1,057
+685;1;44,0;Metropolitana ;santiago;Credito de Consumo;10;3,0;5,0;4,0;4,0;3,0;8,0;Buena atencion;1,397
+686;1;66,0;metropolitana;VALPARAISO;Tarjeta de Credito;11;3,0;4,0;4,0;4,0;5,0;8,0;Demoraron mucho en atenderme;1,892
+687;1;26,0;Coquimbo;Concepcion;Cuenta Vista;18;1,0;4,0;4,0;5,0;4,0;5,0;Sin comentarios;1,172
+688;2;30,0;Araucania;Talcahuano;Cuenta Corriente;13;5,0;5,0;4,0;3,0;5,0;8,0;;0,449
+689;2;72,0;METROPOLITANA;Concepcion;Cuenta Corriente;6;4,0;3,0;5,0;5,0;3,0;3,0;;1,433
+690;2;23,0;Coquimbo;VALPARAISO;Cuenta Vista;9;5,0;1,0;5,0;5,0;4,0;10,0;;1,739
+691;2;40,0;metropolitana;valpo;Cuenta Corriente;10;5,0;4,0;3,0;5,0;4,0;6,0;La app se cae seguido;1,872
+692;1;30,0;Biobio;Santiago;Cuenta Vista;15;2,0;5,0;4,0;5,0;2,0;9,0;Excelente ejecutivo;2,169
+693;2;60,0;Araucania;Coquimbo;Cuenta Corriente;19;3,0;5,0;2,0;5,0;2,0;2,0;Sin comentarios;1,623
+694;2;74,0;araucania;temuco;Cuenta Vista;4;4,0;5,0;4,0;5,0;5,0;3,0;Excelente ejecutivo;0,829
+695;2;30,0;Araucania;STGO;Tarjeta de Credito;3;2,0;4,0;3,0;4,0;99,0;9,0;Sin comentarios;0,649
+696;9;41,0;Biobio;Santiago;Cuenta Corriente;8;5,0;2,0;5,0;4,0;5,0;8,0;Todo bien;1,319
+697;2;37,0;Metropolitana;santiago;Tarjeta de Credito;3;1,0;4,0;2,0;5,0;4,0;3,0;Excelente ejecutivo;1,847
+698;2;32,0;Metropolitana;Puente Alto;Tarjeta de Credito;22;4,0;4,0;99,0;4,0;5,0;5,0;;1,051
+699;2;34,0;Metropolitana;concepción;Cuenta Corriente;8;5,0;3,0;4,0;5,0;4,0;5,0;;0,802
+700;1;33,0;Metropolitana;STGO;Credito de Consumo;10;5,0;4,0;3,0;4,0;4,0;6,0;;1,848
+701;1;66,0;Metropolitana;STGO;Cuenta Vista;15;4,0;5,0;5,0;5,0;1,0;6,0;;1,188
+702;2;59,0;Biobio;valpo;Cuenta Corriente;14;4,0;1,0;3,0;5,0;5,0;7,0;Mejorar el sitio web;1,432
+703;1;34,0;Metropolitana;Santiago;Cuenta Corriente;19;5,0;4,0;3,0;3,0;4,0;8,0;Demoraron mucho en atenderme;0,998
+704;1;65,0;VALPARAISO;valpo;Credito de Consumo;8;3,0;5,0;3,0;3,0;4,0;10,0;;1,562
+705;2;41,0;BIOBIO;Puente Alto;Tarjeta de Credito;7;1,0;3,0;3,0;5,0;3,0;10,0;Mejorar el sitio web;1,595
+706;1;74,0;Biobio;Viña del Mar;Cuenta Vista;19;4,0;3,0;5,0;4,0;5,0;9,0;Muy malos los tiempos de espera;2,163
+707;1;80,0;Metropolitana ;STGO;Tarjeta de Credito;16;3,0;4,0;3,0;5,0;4,0;10,0;Buena atencion;0,891
+708;2;69,0;Metropolitana;VALPARAISO;Cuenta Vista;7;3,0;4,0;99,0;4,0;4,0;9,0;Excelente ejecutivo;1,817
+709;1;21,0;Metropolitana;Santiago ;Cuenta Vista;11;4,0;5,0;5,0;4,0;4,0;10,0;Excelente ejecutivo;0,941
+710;2;25,0;valparaiso;Los Angeles;Cuenta Corriente;4;5,0;99,0;4,0;5,0;5,0;3,0;;1,932
+711;1;63,0;Metropolitana;Santiago;Credito de Consumo;19;5,0;3,0;3,0;4,0;3,0;7,0;Demoraron mucho en atenderme;0,831
+712;2;70,0;Biobio;STGO;Cuenta Vista;2;4,0;5,0;3,0;3,0;5,0;8,0;Mejorar el sitio web;1,033
+713;2;75,0;Metropolitana;Puente Alto;Cuenta Vista;11;4,0;3,0;4,0;2,0;3,0;7,0;Todo bien;0,479
+714;2;35,0;Araucania;Ovalle;Credito de Consumo;10;3,0;4,0;5,0;3,0;4,0;8,0;;1,644
+715;2;79,0;  Araucania;Puente Alto;Cuenta Corriente;4;4,0;1,0;4,0;5,0;4,0;99,0;;0,974
+716;9;72,0;Valparaiso;santiago;Cuenta Corriente;20;4,0;4,0;5,0;3,0;5,0;99,0;Excelente ejecutivo;1,402
+717;1;71,0;Coquimbo;Puente Alto;Credito de Consumo;9;5,0;4,0;3,0;4,0;2,0;2,0;Todo bien;2,154
+718;1;19,0;  Metropolitana;Santiago ;Cuenta Vista;9;3,0;4,0;4,0;2,0;4,0;9,0;Mejorar el sitio web;0,547
+719;2;52,0;METROPOLITANA;Talcahuano;Credito de Consumo;10;3,0;3,0;1,0;3,0;3,0;5,0;Mejorar el sitio web;1,098
+720;2;69,0;Biobio;Santiago;Cuenta Corriente;10;4,0;4,0;4,0;5,0;4,0;8,0;Excelente ejecutivo;1,77
+721;1;70,0;VALPARAISO;concepción;Tarjeta de Credito;5;5,0;5,0;5,0;4,0;5,0;7,0;;1,699
+722;1;58,0;Metropolitana;Temuco;Tarjeta de Credito;3;4,0;4,0;5,0;1,0;4,0;6,0;Buena atencion;2,131
+723;1;52,0;BIOBIO;Coquimbo;Credito de Consumo;12;5,0;2,0;4,0;99,0;4,0;3,0;;1,625
+724;2;35,0;  Araucania;Vina del Mar;Cuenta Vista;10;4,0;3,0;5,0;4,0;5,0;3,0;;1,274
+725;1;47,0;METROPOLITANA;temuco;Cuenta Corriente;22;5,0;5,0;4,0;4,0;4,0;5,0;La app se cae seguido;2,104
+726;1;61,0;Biobio;Viña del Mar;Tarjeta de Credito;15;99,0;3,0;5,0;5,0;5,0;9,0;Buena atencion;1,909
+727;2;37,0;Araucania;Concepcion;Cuenta Corriente;1;4,0;5,0;5,0;4,0;3,0;3,0;Sin comentarios;1,23
+728;1;29,0;Metropolitana;Puente Alto;Cuenta Corriente;3;3,0;4,0;4,0;4,0;4,0;10,0;;1,399
+729;9;47,0;valparaiso;STGO;Credito de Consumo;4;5,0;2,0;2,0;5,0;5,0;7,0;;0,715
+730;2;52,0;Biobio;la serena;Cuenta Corriente;8;5,0;2,0;2,0;99,0;5,0;7,0;;0,531
+731;1;26,0;Metropolitana;Concepcion;Cuenta Corriente;22;3,0;4,0;5,0;5,0;5,0;2,0;Buena atencion;1,68
+732;2;65,0;Araucania ;santiago;Tarjeta de Credito;11;2,0;4,0;5,0;1,0;3,0;10,0;;0,983
+733;2;79,0;Metropolitana;Los Angeles;Cuenta Corriente;20;2,0;4,0;4,0;1,0;5,0;8,0;Mejorar el sitio web;2,132
+734;2;58,0;Coquimbo;santiago;Cuenta Vista;24;4,0;2,0;2,0;3,0;5,0;7,0;Todo bien;0,958
+735;2;35,0;  Araucania;Puente Alto;Cuenta Corriente;15;5,0;1,0;4,0;3,0;5,0;9,0;Demoraron mucho en atenderme;1,805
+736;2;18,0;Metropolitana;Coquimbo;Cuenta Vista;13;4,0;5,0;5,0;3,0;3,0;8,0;;1,792
+737;1;25,0;VALPARAISO;STGO;Credito de Consumo;5;4,0;5,0;4,0;2,0;5,0;6,0;;1,004
+738;1;22,0;Valparaiso;Puente Alto;Cuenta Corriente;8;4,0;2,0;99,0;4,0;4,0;8,0;;1,304
+739;2;57,0;Metropolitana;concepción;Cuenta Corriente;17;4,0;5,0;3,0;2,0;3,0;6,0;Sin comentarios;1,692
+740;2;21,0;Metropolitana;santiago;Cuenta Vista;5;4,0;4,0;2,0;5,0;5,0;7,0;Sin comentarios;1,296
+741;2;71,0;Metropolitana;STGO;Cuenta Vista;19;5,0;5,0;4,0;1,0;4,0;8,0;Buena atencion;2,172
+742;1;18,0;Coquimbo;Santiago;Cuenta Vista;6;4,0;4,0;2,0;3,0;5,0;10,0;;0,711
+743;1;26,0;Metropolitana;STGO;Cuenta Vista;14;3,0;5,0;4,0;5,0;4,0;2,0;Excelente ejecutivo;0,631
+744;1;24,0;ARAUCANIA;Vina del Mar;Cuenta Corriente;20;5,0;3,0;2,0;1,0;5,0;2,0;Demoraron mucho en atenderme;0,523
+745;2;27,0;Valparaiso;La Serena;Cuenta Vista;2;4,0;5,0;4,0;99,0;4,0;6,0;;1,631
+746;1;68,0;Biobio;concepción;Tarjeta de Credito;22;4,0;5,0;4,0;4,0;3,0;8,0;;1,305
+747;1;25,0;Biobio;Valparaiso;Tarjeta de Credito;11;4,0;4,0;5,0;4,0;5,0;7,0;Todo bien;1,995
+748;2;18,0;Biobio;Padre Las Casas;Cuenta Vista;3;5,0;2,0;2,0;4,0;2,0;1,0;Muy malos los tiempos de espera;1,365
+749;2;27,0;Valparaiso;la serena;Cuenta Vista;18;1,0;3,0;5,0;5,0;4,0;4,0;Mejorar el sitio web;1,058
+750;1;76,0;  Metropolitana;santiago;Credito de Consumo;19;2,0;3,0;2,0;3,0;5,0;5,0;Todo bien;1,454
+751;2;57,0;Araucania;STGO;Cuenta Vista;3;4,0;4,0;3,0;4,0;4,0;9,0;Buena atencion;0,785
+752;1;57,0;Coquimbo;valpo;Tarjeta de Credito;5;4,0;2,0;3,0;5,0;2,0;10,0;Sin comentarios;1,139
+753;1;76,0;Metropolitana;Santiago;Cuenta Corriente;24;4,0;4,0;2,0;5,0;4,0;8,0;;0,508
+754;2;30,0;Metropolitana;Santiago;Cuenta Vista;8;3,0;2,0;5,0;3,0;5,0;6,0;Excelente ejecutivo;1,372
+755;2;74,0;  Metropolitana;santiago;Cuenta Vista;23;4,0;4,0;4,0;2,0;3,0;6,0;Todo bien;1,296
+756;1;21,0;Coquimbo;Viña del Mar;Credito de Consumo;5;5,0;4,0;4,0;2,0;4,0;10,0;Excelente ejecutivo;1,805
+757;2;73,0;Metropolitana;concepción;Cuenta Corriente;10;4,0;1,0;2,0;3,0;3,0;10,0;;1,241
+758;1;42,0;Biobio;concepción;Cuenta Corriente;12;5,0;4,0;5,0;3,0;1,0;8,0;La app se cae seguido;0,837
+759;2;39,0;Metropolitana ;concepción;Cuenta Vista;8;4,0;5,0;1,0;4,0;5,0;8,0;Demoraron mucho en atenderme;1,488
+760;1;33,0;Metropolitana;Ovalle;Credito de Consumo;22;5,0;2,0;5,0;99,0;99,0;9,0;;1,697
+761;1;60,0;Coquimbo;valpo;Tarjeta de Credito;8;4,0;4,0;5,0;3,0;5,0;5,0;;1,407
+762;2;58,0;Biobio;la serena;Credito de Consumo;7;4,0;2,0;5,0;3,0;5,0;10,0;Todo bien;1,182
+763;1;73,0;metropolitana;santiago;Credito de Consumo;6;5,0;4,0;4,0;5,0;5,0;10,0;;1,424
+764;2;56,0;Coquimbo;Puente Alto;Cuenta Corriente;2;4,0;3,0;4,0;1,0;4,0;6,0;Buena atencion;1,47
+765;9;52,0;Metropolitana;La Serena;Tarjeta de Credito;10;4,0;4,0;5,0;2,0;4,0;10,0;La app se cae seguido;0,715
+766;1;61,0;Biobio ;Santiago;Cuenta Vista;5;4,0;5,0;4,0;5,0;4,0;7,0;Mejorar el sitio web;1,518
+767;2;22,0;Coquimbo ;valpo;Tarjeta de Credito;10;3,0;1,0;5,0;1,0;5,0;0,0;Buena atencion;1,676
+768;1;62,0;Araucania;VALPARAISO;Credito de Consumo;16;5,0;5,0;2,0;5,0;4,0;10,0;Muy malos los tiempos de espera;1,935
+769;1;76,0;  Metropolitana;valpo;Cuenta Vista;11;4,0;4,0;5,0;5,0;4,0;7,0;Excelente ejecutivo;1,42
+770;2;75,0;Metropolitana;Talcahuano;Tarjeta de Credito;23;5,0;5,0;4,0;5,0;2,0;10,0;Mejorar el sitio web;1,276
+771;2;47,0;Biobio;Puente Alto;Cuenta Corriente;14;4,0;3,0;4,0;4,0;3,0;7,0;;1,385
+772;1;40,0;Valparaiso;Valparaiso;Tarjeta de Credito;22;4,0;5,0;2,0;4,0;4,0;6,0;;0,754
+773;1;61,0;Valparaiso;STGO;Credito de Consumo;19;4,0;3,0;5,0;3,0;4,0;9,0;La app se cae seguido;1,098
+774;1;77,0;Metropolitana;Coquimbo;Cuenta Vista;13;5,0;5,0;2,0;3,0;99,0;9,0;Excelente ejecutivo;1,924
+775;2;21,0;Coquimbo;Valparaiso;Credito de Consumo;15;99,0;5,0;3,0;3,0;5,0;2,0;Todo bien;2,023
+776;2;999,0;Valparaiso;Santiago ;Cuenta Vista;15;5,0;5,0;2,0;4,0;4,0;8,0;Mejorar el sitio web;1,99
+777;2;40,0;Metropolitana;Puente Alto;Cuenta Vista;6;4,0;4,0;4,0;4,0;99,0;10,0;;0,474
+778;1;53,0;metropolitana;STGO;Tarjeta de Credito;20;99,0;4,0;4,0;3,0;1,0;6,0;Demoraron mucho en atenderme;2,134
+779;1;38,0;Biobio;Concepcion;Tarjeta de Credito;22;3,0;5,0;3,0;4,0;3,0;1,0;La app se cae seguido;1,452
+780;2;19,0;Araucania;santiago;Cuenta Vista;14;3,0;3,0;99,0;3,0;5,0;9,0;Buena atencion;1,76
+781;2;77,0;Coquimbo;Santiago ;Tarjeta de Credito;16;5,0;4,0;1,0;4,0;5,0;3,0;La app se cae seguido;0,863
+782;2;56,0;Araucania;Valparaiso;Cuenta Vista;19;3,0;5,0;3,0;5,0;5,0;8,0;Mejorar el sitio web;0,571
+783;2;52,0;Biobio;La Serena;Cuenta Vista;14;3,0;3,0;5,0;5,0;3,0;10,0;Todo bien;1,566
+784;2;22,0;Biobio;la serena;Cuenta Corriente;3;99,0;3,0;5,0;5,0;4,0;7,0;Sin comentarios;0,885
+785;1;42,0;Araucania;Coquimbo;Cuenta Corriente;6;5,0;3,0;5,0;5,0;3,0;6,0;Muy malos los tiempos de espera;0,405
+786;2;48,0;BIOBIO;santiago;Cuenta Corriente;15;5,0;3,0;3,0;5,0;5,0;5,0;;1,715
+787;2;64,0;Coquimbo;Talcahuano;Cuenta Vista;16;1,0;5,0;5,0;5,0;3,0;3,0;La app se cae seguido;0,687
+788;2;60,0;Valparaiso;temuco;Tarjeta de Credito;21;5,0;5,0;4,0;4,0;1,0;6,0;Mejorar el sitio web;0,487
+789;2;33,0;Araucania;santiago;Cuenta Corriente;13;4,0;4,0;5,0;3,0;5,0;8,0;;1,059
+790;1;70,0;Metropolitana;Padre Las Casas;Cuenta Vista;3;99,0;2,0;5,0;4,0;5,0;8,0;Muy malos los tiempos de espera;1,145
+791;1;999,0;Metropolitana;temuco;Cuenta Vista;10;4,0;4,0;4,0;5,0;1,0;10,0;;0,698
+792;1;43,0;Valparaiso;Los Angeles;Cuenta Vista;2;5,0;4,0;2,0;4,0;3,0;5,0;Excelente ejecutivo;1,009
+793;1;66,0;Coquimbo ;Santiago;Cuenta Vista;14;5,0;2,0;5,0;5,0;4,0;2,0;;1,944
+794;1;23,0;VALPARAISO;Santiago ;Cuenta Vista;0;1,0;3,0;5,0;3,0;3,0;10,0;Sin comentarios;1,908
+795;2;29,0;Biobio;STGO;Cuenta Corriente;1;4,0;3,0;2,0;5,0;2,0;10,0;;0,609
+796;2;57,0;Valparaiso;Coquimbo;Cuenta Corriente;17;2,0;2,0;4,0;1,0;5,0;6,0;;0,781
+797;2;31,0;  Valparaiso;valpo;Cuenta Vista;13;3,0;3,0;3,0;4,0;4,0;10,0;;1,546
+798;1;59,0;Coquimbo;Viña del Mar;Tarjeta de Credito;7;5,0;4,0;4,0;4,0;3,0;7,0;;1,626
+799;2;47,0;Metropolitana;Viña del Mar;Credito de Consumo;5;3,0;99,0;5,0;4,0;3,0;6,0;Sin comentarios;1,528
+800;9;52,0;Coquimbo;Temuco;Cuenta Corriente;0;2,0;5,0;5,0;4,0;5,0;8,0;Sin comentarios;0,906
