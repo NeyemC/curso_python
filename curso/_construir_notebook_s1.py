@@ -194,19 +194,33 @@ md(r"""Fíjate que aparecen los códigos numéricos (1 a 5, y algún 99 de "No s
 
 ## 7. Tu turno (tarea corta y opcional)
 
-Practica antes de la próxima clase. Crea una **celda nueva** debajo de cada punto (botón `+` arriba) y resuelve:
+Practica antes de la próxima clase. **Abajo dejé una celda vacía para cada ejercicio:** haz clic en ella, escribe tu respuesta y ejecútala con `Shift`+`Enter`.
+
+*(Si quieres más espacio, puedes crear celdas nuevas con el botón `+` de la barra de arriba.)*
 
 1. Muestra las **primeras 3 filas** de la base. *(Pista: a `.head()` se le puede pasar un número.)*
 2. ¿Cuántas filas y columnas tiene la base? Escribe la instrucción que lo responde.
 3. Muestra solo la columna `region`.
 4. Crea un diccionario llamado `etiquetas_producto` con estas equivalencias, inventando los códigos:
    `1 = "Cuenta Corriente"`, `2 = "Cuenta Vista"`, `3 = "Tarjeta de Crédito"`, `4 = "Crédito de Consumo"`.
-5. Usando ese diccionario, imprime qué significa el código `3`.
+5. Usando ese diccionario, imprime qué significa el código `3`.""")
 
-> En la **Sesión 2** aprenderemos a *seleccionar y filtrar*: quedarnos solo con las columnas que nos interesan y con los casos que cumplen una condición (ej. "solo mujeres mayores de 30 de la Región Metropolitana").""")
-
-code(r"""# Espacio para tus ejercicios 👇
+code(r"""# Ejercicio 1: muestra las primeras 3 filas de la base
 """)
+
+code(r"""# Ejercicio 2: ¿cuántas filas y columnas tiene la base?
+""")
+
+code(r"""# Ejercicio 3: muestra solo la columna 'region'
+""")
+
+code(r"""# Ejercicio 4: crea el diccionario etiquetas_producto
+""")
+
+code(r"""# Ejercicio 5: imprime qué significa el código 3 usando etiquetas_producto
+""")
+
+md(r"""> En la **Sesión 2** aprenderemos a *seleccionar y filtrar*: quedarnos solo con las columnas que nos interesan y con los casos que cumplen una condición (ej. "solo mujeres mayores de 30 de la Región Metropolitana").""")
 
 notebook = {
     "cells": cells,
