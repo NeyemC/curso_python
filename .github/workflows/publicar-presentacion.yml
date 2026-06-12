@@ -1,0 +1,51 @@
+name: Publicar presentación (Marp)
+
+# Se ejecuta cuando cambia la presentación (o manualmente desde la pestaña Actions)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "curso/Presentacion del curso.md"
+      - ".github/workflows/publicar-presentacion.yml"
+  workflow_dispatch:
+
+# Permisos que necesita el despliegue a GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Evita despliegues simultáneos pisándose entre sí
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  construir:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Convertir la presentación a slides HTML con Marp
+        run: |
+          mkdir -p _site
+          npx --yes @marp-team/marp-cli@latest \
+            "curso/Presentacion del curso.md" \
+            -o _site/index.html --html
+
+      - name: Subir el resultado como artefacto de Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  desplegar:
+    needs: construir
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
