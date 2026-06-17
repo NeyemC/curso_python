@@ -124,23 +124,25 @@ Un estudio **ficticio pero realista**: satisfacción de clientes de un banco (CX
 
 ---
 
-# Sesión 1
-## "Hola, Python": el entorno, los datos y el DataFrame
+# ✅ Lo que ya hicimos
+## Sesión 1 — "Hola, Python"
 
 ---
 
-## Sesión 1 — Lo que vemos
+## Sesión 1 — Recordemos
 
-- 🧱 Qué es **Jupyter** y cómo se ejecuta una celda (`Shift`+`Enter`).
-- 🔤 **Tipos de datos** pensados como variables de encuesta (números, texto, booleanos).
-- 📋 **Listas y diccionarios** → los diccionarios son las *etiquetas de valor* de SPSS.
-- ⭐ Abrir nuestra **primera base real** con `pd.read_csv()` y mirarla: `.head()`, `.shape`, `.columns`.
+En la primera sesión:
 
-**Resultado:** perderle el miedo a la herramienta y entender qué es un DataFrame.
+- ✅ Le **perdimos el miedo a Jupyter**: celdas que se ejecutan con `Shift`+`Enter`.
+- ✅ Conocimos los **tipos de datos** pensándolos como variables de encuesta.
+- ✅ Descubrimos que los **diccionarios** son las *etiquetas de valor* de SPSS.
+- ✅ Abrimos nuestra **primera base real** y la miramos: `.head()`, `.shape`, `.columns`.
+
+> **Conclusión:** ya sabemos abrir una encuesta y entender qué es un **DataFrame**.
 
 ---
 
-## Sesión 1 — Un vistazo al código
+## Sesión 1 — Lo que escribimos
 
 ```python
 import pandas as pd
@@ -156,6 +158,13 @@ datos.shape         # (800, 15) -> 800 casos, 15 variables
 etiquetas_sexo = {1: "Hombre", 2: "Mujer", 9: "Sin dato"}
 ```
 
+> Punto de partida para todo lo que viene. 👇
+
+---
+
+# 🔜 Lo que viene ahora
+## Sesiones 2 y 3
+
 ---
 
 # Sesión 2
@@ -163,38 +172,84 @@ etiquetas_sexo = {1: "Hombre", 2: "Mujer", 9: "Sin dato"}
 
 ---
 
-## Sesión 2 — Lo que vemos
+## Sesión 2 — El problema
 
-- 🎯 Quedarnos con **una o varias columnas** (las variables que interesan).
-- 📍 `loc` e `iloc`: apuntar a filas y columnas por nombre o por posición.
-- 🔎 **Filtrar casos** con condiciones — el *Seleccionar casos* de SPSS.
-- ➕ **Combinar criterios** con `&` (y) / `|` (o).
+En un estudio **casi nunca** usamos toda la base de una vez. Necesitamos:
 
-**Reto de la sesión:** aislar a las *mujeres mayores de 30 de la Región Metropolitana*... sorteando la suciedad real de los datos.
+- Quedarnos con **las variables justas** (ej. solo sexo, edad y satisfacción).
+- Aislar **los casos que cumplen una condición** (ej. solo las mujeres, solo la RM).
+
+> Es exactamente *elegir variables* + *Datos → Seleccionar casos* de SPSS... pero en una línea y **reproducible**.
 
 ---
 
-## Sesión 2 — Un vistazo al código
+## Sesión 2 — Lo que aprenderemos
+
+- 🎯 Seleccionar **una columna** (*Series*) o **varias** (*DataFrame*).
+- 📍 `loc` e `iloc`: apuntar por **nombre** o por **posición**.
+- 🔎 **Filtrar casos**: una condición devuelve Verdadero/Falso por fila.
+- ➕ **Combinar criterios** con `&` (y) y `|` (o), cada uno entre paréntesis.
+
+**Reto de la sesión:** aislar a las *mujeres mayores de 30 de la Región Metropolitana*.
+
+---
+
+## Sesión 2 — Datos reales = datos sucios
+
+El reto esconde una lección clave: **los datos del terreno vienen sucios.**
 
 ```python
-# Una condición devuelve Verdadero/Falso por fila
-datos[datos["edad"] > 60]
+# El código 999 ("sin dato") se cuela en el filtro de edad
+datos[(datos["edad"] > 30) & (datos["edad"] < 120)]
 
-# Combinar criterios (¡cada uno entre paréntesis!)
-filtro = (datos["sexo"] == 2) & (datos["edad"] > 30)
-mujeres_30 = datos[filtro]
-
-mujeres_30.shape   # cuántos casos cumplen
+# La región viene inconsistente: "RM", "  rm ", "Metropolitana"...
+region_limpia = datos["region"].str.strip().str.lower()
+datos[region_limpia == "metropolitana"]
 ```
 
-> Y de paso aprendemos a esquivar los códigos `999` y a emparejar texto inconsistente.
+> Aprenderemos a **filtrar bien sorteando esa suciedad** (y a limpiarla de raíz más adelante).
+
+---
+
+# Sesión 3
+## Cargar datos de verdad: CSV, Excel y SPSS
+
+---
+
+## Sesión 3 — El problema
+
+Los datos llegan en **mil formatos**, y si la carga queda mal... *todo lo demás sale mal*.
+
+- 📄 **CSV** — cada sistema usa su separador y su formato de números.
+- 📊 **Excel** — a veces con varias hojas.
+- 🟦 **SPSS (`.sav`)** — con etiquetas que **no queremos perder**.
+
+> "Abrir bien los datos" es, en la práctica, la mitad del trabajo.
+
+---
+
+## Sesión 3 — El puente con SPSS
+
+Lo más valioso para nosotras: leer un `.sav` **sin perder sus etiquetas**.
+
+```python
+import pyreadstat
+
+# Devuelve los datos Y los metadatos (las etiquetas)
+datos, meta = pyreadstat.read_sav("datos/encuesta_satisfaccion.sav")
+
+meta.column_names_to_labels    # etiquetas de variable
+meta.variable_value_labels     # etiquetas de valor (1 = "Hombre"...)
+```
+
+> Sea CSV, Excel o SPSS, **todo termina en el mismo DataFrame** que ya sabemos manejar.
 
 ---
 
 ## Próximos pasos
 
-- **Sesión 3:** cargar datos de verdad — CSV, Excel y archivos **`.sav` de SPSS** con sus etiquetas.
-- Luego: limpiar, recodificar y entrar al **análisis** (frecuencias, cruces, ponderación).
+- **Sesión 4:** el "informe de salud" de una base recién llegada (tipos, vacíos, rarezas).
+- Luego: **limpiar y recodificar**, y entrar al **análisis** (frecuencias, cruces, ponderación).
 - Más adelante: visualización, automatización de reportes y **estadística multivariada**.
 
 ---
