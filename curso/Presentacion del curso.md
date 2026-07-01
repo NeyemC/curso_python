@@ -128,6 +128,7 @@ Un estudio **ficticio pero realista**: satisfacción de clientes de un banco (CX
 ## Un recorrido por las Sesiones 1 a 12
 
 > Ya tenemos el flujo completo: **cargar → limpiar → recodificar → analizar**.
+> Cada bloque abre con un resumen y luego una lámina por sesión.
 
 ---
 
@@ -136,28 +137,43 @@ Un estudio **ficticio pero realista**: satisfacción de clientes de un banco (CX
 
 ---
 
-## Bloque 1 — Qué logramos
+## Bloque 1 — Resumen
 
 - 🧱 **Jupyter**: celdas que se ejecutan con `Shift`+`Enter`.
 - 🔤 **Tipos de datos** como variables de encuesta; los **diccionarios** son las *etiquetas de valor* de SPSS.
-- ⭐ El **DataFrame**: abrir la base y mirarla (`.head()`, `.shape`, `.columns`).
-- 🔎 **Seleccionar** columnas y **filtrar** casos (el *Seleccionar casos* de SPSS).
+- ⭐ El **DataFrame**: abrir la base y mirarla.
+- 🔎 **Seleccionar** columnas y **filtrar** casos.
 
 > Ya sabemos abrir una encuesta, apuntar a las variables y aislar subgrupos.
 
 ---
 
-## Bloque 1 — En código
+## Sesión 1 — "Hola, Python"
+
+El primer contacto: entorno, tipos de datos y el primer DataFrame.
 
 ```python
 import pandas as pd
 datos = pd.read_csv("datos/encuesta_satisfaccion.csv",
                     sep=";", decimal=",")
+datos.head()        # (800, 15): 800 casos, 15 variables
 
+etiquetas_sexo = {1: "Hombre", 2: "Mujer"}  # = value labels de SPSS
+```
+
+---
+
+## Sesión 2 — Seleccionar y filtrar
+
+Apuntar a la variable y al caso correcto: columnas (*Series* / *DataFrame*), `loc`/`iloc` y filtros.
+
+```python
 # Filtrar: mujeres mayores de 30 (cada condición entre paréntesis)
 filtro = (datos["sexo"] == 2) & (datos["edad"] > 30)
 datos[filtro].shape
 ```
+
+> El *Seleccionar casos* de SPSS, en una línea y reproducible.
 
 ---
 
@@ -166,19 +182,19 @@ datos[filtro].shape
 
 ---
 
-## Bloque 2 — Qué logramos
+## Bloque 2 — Resumen
 
-- 📂 Cargar datos de **verdad**: CSV (`sep`, `decimal`, `encoding`), Excel y **SPSS `.sav`**.
-- 🩺 El **"informe de salud"** de una base nueva: `.info()`, `.describe()`, `.isnull()`.
-- ✏️ **Renombrar**, ordenar y **crear variables** (ej. tramos de edad con `pd.cut`).
+- 📂 Cargar datos de **verdad**: CSV, Excel y **SPSS `.sav`**.
+- 🩺 El **"informe de salud"** de una base nueva.
+- ✏️ **Renombrar**, ordenar y **crear variables**.
 
 > Diagnosticamos la base *antes* de tocarla: tamaño, tipos, vacíos y rarezas.
 
 ---
 
-## Bloque 2 — El puente con SPSS
+## Sesión 3 — Cargar datos (CSV, Excel, SPSS)
 
-Leer un `.sav` **sin perder sus etiquetas**:
+El puente con nuestro mundo: leer un `.sav` **sin perder sus etiquetas**.
 
 ```python
 import pyreadstat
@@ -192,16 +208,30 @@ meta.variable_value_labels    # etiquetas de valor (1 = "Hombre"...)
 
 ---
 
-## Bloque 2 — Cazar rarezas
+## Sesión 4 — Explorar y diagnosticar
 
-`.describe()` delató los **códigos escondidos**:
+El "informe de salud": `.info()`, `.describe()`, `.isnull()`, `value_counts()`.
 
 ```python
 datos["edad"].max()            # 999 -> "sin dato" disfrazado de número
 datos["P5_sat_general"].max()  # 99  -> "No sabe / No responde"
 ```
 
-> Detectar esto **ahora** evita promedios falsos después.
+> Cazar los **códigos escondidos** ahora evita promedios falsos después.
+
+---
+
+## Sesión 5 — Ordenar, renombrar y crear variables
+
+Dejar la base ordenada y con las variables que necesitamos.
+
+```python
+datos = datos.rename(columns={"P5_sat_general": "sat_general"})
+
+# Agrupar edad en tramos
+datos["tramo_edad"] = pd.cut(datos["edad"], bins=[17, 29, 44, 59, 120],
+                             labels=["18-29", "30-44", "45-59", "60+"])
+```
 
 ---
 
@@ -210,27 +240,56 @@ datos["P5_sat_general"].max()  # 99  -> "No sabe / No responde"
 
 ---
 
-## Bloque 3 — Qué logramos
+## Bloque 3 — Resumen
 
-- 🕳️ **Valores perdidos**: convertir 99/999 en `NaN` y decidir (eliminar / imputar / dejar).
-- 🔁 **Recodificar**: `.map()`, `.replace()`, `np.where()`, `pd.cut()` → clasificación NPS.
-- 🔤 **Limpiar texto**: estandarizar la región sucia con métodos `.str`.
+- 🕳️ **Valores perdidos**: convertir 99/999 en `NaN` y decidir qué hacer.
+- 🔁 **Recodificar**: `.map()`, `.replace()`, `np.where()`, `pd.cut()`.
+- 🔤 **Limpiar texto**: estandarizar variables escritas a mano.
 
 > Dejamos la base **limpia y confiable** para analizar.
 
 ---
 
-## Bloque 3 — En código
+## Sesión 6 — Valores perdidos
+
+Detectar, decidir y tratar los "No sabe / No responde".
 
 ```python
-# Perdidos: el 999 inflaba el promedio de edad
+# El 999 inflaba el promedio de edad -> lo vaciamos
 datos["edad"] = datos["edad"].replace(999, np.nan)
 
-# Recodificar códigos a etiquetas (como las value labels de SPSS)
+datos.dropna(subset=["sat_general"])   # o fillna() para imputar
+```
+
+> pandas ignora los `NaN` en los cálculos: promedios correctos.
+
+---
+
+## Sesión 7 — Recodificar variables
+
+La tarea más frecuente del análisis de encuestas.
+
+```python
+# Códigos -> etiquetas (como las value labels de SPSS)
 datos["sexo_txt"] = datos["sexo"].map({1: "Hombre", 2: "Mujer"})
 
-# Texto: 20+ variantes de región -> 5 limpias
+# Clasificación NPS
+datos["nps_grupo"] = pd.cut(datos["P6_nps"], bins=[-1, 6, 8, 10],
+                    labels=["Detractor", "Pasivo", "Promotor"])
+```
+
+---
+
+## Sesión 8 — Limpiar texto y respuestas abiertas
+
+Estandarizar variables de texto y explorar preguntas abiertas.
+
+```python
+# 20+ variantes de región -> 5 limpias
 datos["region"] = datos["region"].str.strip().str.title()
+
+# Buscar un tema en respuestas abiertas
+datos["comentario"].str.contains("espera|demor", case=False, na=False)
 ```
 
 ---
@@ -240,33 +299,62 @@ datos["region"] = datos["region"].str.strip().str.title()
 
 ---
 
-## Bloque 4 — Qué logramos
+## Bloque 4 — Resumen
 
-- 📊 **Frecuencias** con `n` y `%` (el primer entregable de un estudio).
-- 🔀 **Cruces** (`crosstab`): satisfacción × segmento, con % por columna.
-- 🧮 **`groupby` / `pivot_table`**: promedios por grupo (tablas dinámicas en código).
-- ⚖️ **Ponderación**: frecuencias y promedios **ponderados**.
+- 📊 **Frecuencias** con `n` y `%` (el primer entregable).
+- 🔀 **Cruces** (`crosstab`) por segmento.
+- 🧮 **`groupby` / `pivot_table`**: promedios por grupo.
+- ⚖️ **Ponderación**: frecuencias y promedios ponderados.
 
 > Con esto se arma **el grueso de un informe** de encuesta.
 
 ---
 
-## Bloque 4 — Cruces y grupos
+## Sesión 9 — Frecuencias y descriptivos
+
+El análisis univariado: el primer entregable de casi todo estudio.
+
+```python
+# Tabla de frecuencias con n y %
+conteo = datos["nps_grupo"].value_counts()
+pct = (datos["nps_grupo"].value_counts(normalize=True) * 100).round(1)
+pd.DataFrame({"n": conteo, "%": pct})
+```
+
+---
+
+## Sesión 10 — Cruces (tablas de contingencia)
+
+El análisis bivariado: "¿el resultado cambia según el segmento?".
 
 ```python
 # ¿Qué % está satisfecho DENTRO de cada segmento?
 pd.crosstab(datos["satisf_2c"], datos["sexo_txt"],
             normalize="columns") * 100
-
-# Satisfacción promedio por región
-datos.groupby("region")["sat_general"].mean()
 ```
 
 > El error clásico a evitar: confundir **% por columna** con **% por fila**.
 
 ---
 
-## Bloque 4 — Ponderar bien
+## Sesión 11 — Agrupar y resumir (`groupby`)
+
+Las tablas dinámicas, en código: promedios por grupo.
+
+```python
+# Satisfacción promedio por región
+datos.groupby("region")["sat_general"].mean()
+
+# Tabla dinámica: región x sexo
+pd.pivot_table(datos, index="region", columns="sexo_txt",
+               values="sat_general", aggfunc="mean")
+```
+
+---
+
+## Sesión 12 — Ponderación
+
+Cuando los casos no valen todos lo mismo (factor de expansión).
 
 ```python
 d = datos.dropna(subset=["sat_general"])
@@ -275,7 +363,7 @@ d["sat_general"].mean()                                # sin ponderar
 np.average(d["sat_general"], weights=d["ponderador"])  # PONDERADA
 ```
 
-> Ignorar el ponderador entrega resultados **sesgados**. En opinión pública, puede cambiar titulares.
+> Ignorar el ponderador **sesga** los resultados. En opinión pública, cambia titulares.
 
 ---
 
