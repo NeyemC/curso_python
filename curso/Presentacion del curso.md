@@ -124,133 +124,167 @@ Un estudio **ficticio pero realista**: satisfacción de clientes de un banco (CX
 
 ---
 
-# ✅ Lo que ya hicimos
-## Sesión 1 — "Hola, Python"
+# ✅ Lo que ya construimos
+## Un recorrido por las Sesiones 1 a 12
+
+> Ya tenemos el flujo completo: **cargar → limpiar → recodificar → analizar**.
 
 ---
 
-## Sesión 1 — Recordemos
-
-En la primera sesión:
-
-- ✅ Le **perdimos el miedo a Jupyter**: celdas que se ejecutan con `Shift`+`Enter`.
-- ✅ Conocimos los **tipos de datos** pensándolos como variables de encuesta.
-- ✅ Descubrimos que los **diccionarios** son las *etiquetas de valor* de SPSS.
-- ✅ Abrimos nuestra **primera base real** y la miramos: `.head()`, `.shape`, `.columns`.
-
-> **Conclusión:** ya sabemos abrir una encuesta y entender qué es un **DataFrame**.
+# Bloque 1
+## Primeros pasos (Sesiones 1–2)
 
 ---
 
-## Sesión 1 — Lo que escribimos
+## Bloque 1 — Qué logramos
+
+- 🧱 **Jupyter**: celdas que se ejecutan con `Shift`+`Enter`.
+- 🔤 **Tipos de datos** como variables de encuesta; los **diccionarios** son las *etiquetas de valor* de SPSS.
+- ⭐ El **DataFrame**: abrir la base y mirarla (`.head()`, `.shape`, `.columns`).
+- 🔎 **Seleccionar** columnas y **filtrar** casos (el *Seleccionar casos* de SPSS).
+
+> Ya sabemos abrir una encuesta, apuntar a las variables y aislar subgrupos.
+
+---
+
+## Bloque 1 — En código
 
 ```python
 import pandas as pd
-
-# Abrir la base de la encuesta
 datos = pd.read_csv("datos/encuesta_satisfaccion.csv",
                     sep=";", decimal=",")
 
-datos.head()        # primeras filas
-datos.shape         # (800, 15) -> 800 casos, 15 variables
-
-# Las "etiquetas de valor", como en SPSS
-etiquetas_sexo = {1: "Hombre", 2: "Mujer", 9: "Sin dato"}
+# Filtrar: mujeres mayores de 30 (cada condición entre paréntesis)
+filtro = (datos["sexo"] == 2) & (datos["edad"] > 30)
+datos[filtro].shape
 ```
 
-> Punto de partida para todo lo que viene. 👇
+---
+
+# Bloque 2
+## Manejar la base (Sesiones 3–5)
 
 ---
 
-# 🔜 Lo que viene ahora
-## Sesiones 2 y 3
+## Bloque 2 — Qué logramos
+
+- 📂 Cargar datos de **verdad**: CSV (`sep`, `decimal`, `encoding`), Excel y **SPSS `.sav`**.
+- 🩺 El **"informe de salud"** de una base nueva: `.info()`, `.describe()`, `.isnull()`.
+- ✏️ **Renombrar**, ordenar y **crear variables** (ej. tramos de edad con `pd.cut`).
+
+> Diagnosticamos la base *antes* de tocarla: tamaño, tipos, vacíos y rarezas.
 
 ---
 
-# Sesión 2
-## Seleccionar y filtrar: apuntar a la variable y al caso correcto
+## Bloque 2 — El puente con SPSS
 
----
-
-## Sesión 2 — El problema
-
-En un estudio **casi nunca** usamos toda la base de una vez. Necesitamos:
-
-- Quedarnos con **las variables justas** (ej. solo sexo, edad y satisfacción).
-- Aislar **los casos que cumplen una condición** (ej. solo las mujeres, solo la RM).
-
-> Es exactamente *elegir variables* + *Datos → Seleccionar casos* de SPSS... pero en una línea y **reproducible**.
-
----
-
-## Sesión 2 — Lo que aprenderemos
-
-- 🎯 Seleccionar **una columna** (*Series*) o **varias** (*DataFrame*).
-- 📍 `loc` e `iloc`: apuntar por **nombre** o por **posición**.
-- 🔎 **Filtrar casos**: una condición devuelve Verdadero/Falso por fila.
-- ➕ **Combinar criterios** con `&` (y) y `|` (o), cada uno entre paréntesis.
-
-**Reto de la sesión:** aislar a las *mujeres mayores de 30 de la Región Metropolitana*.
-
----
-
-## Sesión 2 — Datos reales = datos sucios
-
-El reto esconde una lección clave: **los datos del terreno vienen sucios.**
-
-```python
-# El código 999 ("sin dato") se cuela en el filtro de edad
-datos[(datos["edad"] > 30) & (datos["edad"] < 120)]
-
-# La región viene inconsistente: "RM", "  rm ", "Metropolitana"...
-region_limpia = datos["region"].str.strip().str.lower()
-datos[region_limpia == "metropolitana"]
-```
-
-> Aprenderemos a **filtrar bien sorteando esa suciedad** (y a limpiarla de raíz más adelante).
-
----
-
-# Sesión 3
-## Cargar datos de verdad: CSV, Excel y SPSS
-
----
-
-## Sesión 3 — El problema
-
-Los datos llegan en **mil formatos**, y si la carga queda mal... *todo lo demás sale mal*.
-
-- 📄 **CSV** — cada sistema usa su separador y su formato de números.
-- 📊 **Excel** — a veces con varias hojas.
-- 🟦 **SPSS (`.sav`)** — con etiquetas que **no queremos perder**.
-
-> "Abrir bien los datos" es, en la práctica, la mitad del trabajo.
-
----
-
-## Sesión 3 — El puente con SPSS
-
-Lo más valioso para nosotras: leer un `.sav` **sin perder sus etiquetas**.
+Leer un `.sav` **sin perder sus etiquetas**:
 
 ```python
 import pyreadstat
-
-# Devuelve los datos Y los metadatos (las etiquetas)
 datos, meta = pyreadstat.read_sav("datos/encuesta_satisfaccion.sav")
 
-meta.column_names_to_labels    # etiquetas de variable
-meta.variable_value_labels     # etiquetas de valor (1 = "Hombre"...)
+meta.column_names_to_labels   # etiquetas de variable
+meta.variable_value_labels    # etiquetas de valor (1 = "Hombre"...)
 ```
 
-> Sea CSV, Excel o SPSS, **todo termina en el mismo DataFrame** que ya sabemos manejar.
+> Sea CSV, Excel o SPSS, **todo termina en el mismo DataFrame**.
+
+---
+
+## Bloque 2 — Cazar rarezas
+
+`.describe()` delató los **códigos escondidos**:
+
+```python
+datos["edad"].max()            # 999 -> "sin dato" disfrazado de número
+datos["P5_sat_general"].max()  # 99  -> "No sabe / No responde"
+```
+
+> Detectar esto **ahora** evita promedios falsos después.
+
+---
+
+# Bloque 3
+## Limpiar y recodificar (Sesiones 6–8)
+
+---
+
+## Bloque 3 — Qué logramos
+
+- 🕳️ **Valores perdidos**: convertir 99/999 en `NaN` y decidir (eliminar / imputar / dejar).
+- 🔁 **Recodificar**: `.map()`, `.replace()`, `np.where()`, `pd.cut()` → clasificación NPS.
+- 🔤 **Limpiar texto**: estandarizar la región sucia con métodos `.str`.
+
+> Dejamos la base **limpia y confiable** para analizar.
+
+---
+
+## Bloque 3 — En código
+
+```python
+# Perdidos: el 999 inflaba el promedio de edad
+datos["edad"] = datos["edad"].replace(999, np.nan)
+
+# Recodificar códigos a etiquetas (como las value labels de SPSS)
+datos["sexo_txt"] = datos["sexo"].map({1: "Hombre", 2: "Mujer"})
+
+# Texto: 20+ variantes de región -> 5 limpias
+datos["region"] = datos["region"].str.strip().str.title()
+```
+
+---
+
+# Bloque 4 ❤️
+## Analizar la encuesta (Sesiones 9–12) — *el corazón*
+
+---
+
+## Bloque 4 — Qué logramos
+
+- 📊 **Frecuencias** con `n` y `%` (el primer entregable de un estudio).
+- 🔀 **Cruces** (`crosstab`): satisfacción × segmento, con % por columna.
+- 🧮 **`groupby` / `pivot_table`**: promedios por grupo (tablas dinámicas en código).
+- ⚖️ **Ponderación**: frecuencias y promedios **ponderados**.
+
+> Con esto se arma **el grueso de un informe** de encuesta.
+
+---
+
+## Bloque 4 — Cruces y grupos
+
+```python
+# ¿Qué % está satisfecho DENTRO de cada segmento?
+pd.crosstab(datos["satisf_2c"], datos["sexo_txt"],
+            normalize="columns") * 100
+
+# Satisfacción promedio por región
+datos.groupby("region")["sat_general"].mean()
+```
+
+> El error clásico a evitar: confundir **% por columna** con **% por fila**.
+
+---
+
+## Bloque 4 — Ponderar bien
+
+```python
+d = datos.dropna(subset=["sat_general"])
+
+d["sat_general"].mean()                                # sin ponderar
+np.average(d["sat_general"], weights=d["ponderador"])  # PONDERADA
+```
+
+> Ignorar el ponderador entrega resultados **sesgados**. En opinión pública, puede cambiar titulares.
 
 ---
 
 ## Próximos pasos
 
-- **Sesión 4:** el "informe de salud" de una base recién llegada (tipos, vacíos, rarezas).
-- Luego: **limpiar y recodificar**, y entrar al **análisis** (frecuencias, cruces, ponderación).
-- Más adelante: visualización, automatización de reportes y **estadística multivariada**.
+- 🎨 **Bloque 5:** visualizar — gráficos claros y presentables para el cliente.
+- 🤖 **Bloque 6:** automatizar el reporte — funciones y exportar a Excel.
+- 📈 **Bloque 7:** estadística avanzada — correlación, regresión, factorial y segmentación.
+- 🏁 **Proyecto final:** un estudio de encuesta de punta a punta.
 
 ---
 
